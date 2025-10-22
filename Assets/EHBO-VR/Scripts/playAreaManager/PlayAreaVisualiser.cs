@@ -17,18 +17,25 @@ public class PlayAreaVisualiser : MonoBehaviour
 
     void Start()
     {
+        // Check of er een VR headset aanwezig is
+        if (!OVRManager.isHmdPresent)
+        {
+            Debug.LogWarning("VR headset is niet aanwezig. Boundary-functionaliteit wordt overgeslagen.");
+            return;
+        }
+
         ovrBoundary = new OVRBoundary();
         var boundaryData = ovrBoundary.GetGeometry(OVRBoundary.BoundaryType.PlayArea);
 
-        if (boundaryData.Length > 0)
-        {
-            boundaryPointsWorld = TransformBoundaryPointsToWorld(boundaryData);
-            PlaceCornerMarkers(boundaryPointsWorld);
-        }
-        else
+        // Check of boundaryData null is of leeg
+        if (boundaryData == null || boundaryData.Length == 0)
         {
             Debug.LogWarning("No play area boundary detected. Ensure the play area is configured.");
+            return;
         }
+
+        boundaryPointsWorld = TransformBoundaryPointsToWorld(boundaryData);
+        PlaceCornerMarkers(boundaryPointsWorld);
     }
 
     private Vector3[] TransformBoundaryPointsToWorld(Vector3[] boundaryPoints)

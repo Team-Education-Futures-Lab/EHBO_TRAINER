@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.meta.xr.sdk.all": "68.0.1",
+    "com.meta.xr.sdk.all": "78.0.0",
     "com.unity.ai.navigation": "2.0.8",
     "com.unity.collab-proxy": "2.8.2",
     "com.unity.feature.development": "1.0.2",
@@ -17,7 +17,7 @@
     "com.unity.visualscripting": "1.9.7",
     "com.unity.xr.arfoundation": "6.2.0",
     "com.unity.xr.interaction.toolkit": "3.2.1",
-    "com.unity.xr.oculus": "4.5.1",
+    "com.unity.xr.oculus": "4.5.2",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
