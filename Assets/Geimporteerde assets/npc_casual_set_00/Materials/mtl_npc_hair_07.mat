@@ -153,13 +153,13 @@ Material:
     - _Mode: 1
     - _NormalMapKwToggle: 1
     - _Occlusion: 0
-    - _OcclusionStrength: 0.5
+    - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _ShadowStrength: 0.263
     - _Shininess: 0.705
-    - _Smoothness: 0.5
+    - _Smoothness: 0.3
     - _SmoothnessTextureChannel: 0
     - _SoftParticlesEnabled: 0
     - _SoftParticlesFarFadeDistance: 1
