@@ -645,7 +645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2792499861452184002, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.319777
+      value: -11.15
       objectReference: {fileID: 0}
     - target: {fileID: 2792499861452184002, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
       propertyPath: m_LocalPosition.y
@@ -653,7 +653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2792499861452184002, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.8
+      value: -17.62
       objectReference: {fileID: 0}
     - target: {fileID: 2792499861452184002, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14217,7 +14217,7 @@ Transform:
   m_GameObject: {fileID: 846613045}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 75.49, y: 19.99634, z: 142.84}
+  m_LocalPosition: {x: 72.6, y: 19.99634, z: 163.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16498,7 +16498,7 @@ Transform:
   m_GameObject: {fileID: 921555702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 80.06, y: 19.99634, z: 153.28}
+  m_LocalPosition: {x: 79.55, y: 19.99634, z: 150.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34446,9 +34446,11 @@ MonoBehaviour:
   waypoints:
   - {fileID: 921555703}
   - {fileID: 846613046}
-  moveSpeed: 3
-  animator: {fileID: 1942304181}
+  currentState: 1
+  walkSpeed: 2
+  runSpeed: 5
   waitTime: 2
+  animator: {fileID: 1942304181}
 --- !u!1001 &1947233034
 PrefabInstance:
   m_ObjectHideFlags: 0
