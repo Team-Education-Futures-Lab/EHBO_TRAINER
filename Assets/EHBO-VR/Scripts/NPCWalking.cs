@@ -7,11 +7,12 @@ public class NPCWalking : MonoBehaviour
     public enum MoveState { Idle, Walk, Run }
 
     public Transform[] waypoints;
-    public MoveState currentState = MoveState.Walk; // ← kies in Inspector
-    public float walkSpeed = 2f;
-    public float runSpeed = 5f;
-    public float waitTime = 2f;
+    public MoveState currentState = MoveState.Walk;
+    public float walkSpeed = 3f;
+    public float runSpeed = 6f;
+    public float waitTime = 0f;
     public Animator animator;
+    public bool loopPath = false;
 
     private int currentWaypoint = 0;
     private bool isWaiting = false;
@@ -43,9 +44,11 @@ public class NPCWalking : MonoBehaviour
 
             // Beweeg en roteer NPC
             transform.position += direction * moveSpeed * Time.deltaTime;
-            transform.rotation = Quaternion.LookRotation(direction);
+   
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 3f);
 
-            // ✅ Normaliseer snelheid voor de Blend Tree (0 = idle, 0.5 = walk, 1 = run)
+            //How fast the animation is
             float blendValue = 0f;
             if (currentState == MoveState.Idle)
                 blendValue = 0f;
@@ -67,8 +70,27 @@ public class NPCWalking : MonoBehaviour
     {
         isWaiting = true;
         yield return new WaitForSeconds(waitTime);
-        currentWaypoint = (currentWaypoint + 1) % waypoints.Length;
-        isWaiting = false;
+
+        //if loopPatch is true walk back to the first waypoint
+        if (loopPath)
+        {
+            currentWaypoint = (currentWaypoint + 1) % waypoints.Length;
+            isWaiting = false;
+        }
+        else
+        {
+            //else stop at the last waypoint
+            if (currentWaypoint < waypoints.Length - 1)
+            {
+                currentWaypoint++;
+                isWaiting = false;
+            }
+            else
+            {
+                currentState = MoveState.Idle;
+                animator.SetFloat("Speed", 0f);
+            }
+        }
     }
 }
 
