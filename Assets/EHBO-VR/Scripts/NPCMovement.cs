@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NPCWalking : MonoBehaviour
+public class NPCMovement : MonoBehaviour
 {
     public enum MoveState { Idle, Walk, Run }
 
@@ -15,7 +15,7 @@ public class NPCWalking : MonoBehaviour
 
     [Header("References")]
     public Animator animator;
-    public Transform lookAtTarget; 
+    public Transform lookAtTarget;
 
     private int currentWaypoint = 0;
     private bool isWaiting = false;
