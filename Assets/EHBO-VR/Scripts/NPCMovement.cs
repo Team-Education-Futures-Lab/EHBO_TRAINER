@@ -17,7 +17,7 @@ public class NPCMovement : MonoBehaviour
     public Animator animator;
     public Transform lookAtTarget;
 
-    private int currentWaypoint = 0;
+    public int currentWaypoint = 0;
     private bool isWaiting = false;
 
     void Update()

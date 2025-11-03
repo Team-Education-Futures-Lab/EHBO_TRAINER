@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -14,6 +14,8 @@ public class IncidentCountdown : MonoBehaviour
 
     public Animator[] objectsToAnimate; // Reference to the animators
     public AudioSource countdownEndSound; // Reference to the AudioSource for the sound effect
+
+    public GameObject[] responders; // De 2 NPC's die moeten reageren
 
     private float currentTime;
     private bool countdownFinished = false; // To track if the countdown is already finished
@@ -50,6 +52,7 @@ public class IncidentCountdown : MonoBehaviour
 
         // Trigger the animation on all specified objects
         SwapAnimation();
+        ActivateResponders();
 
         // Find and stop all NavMeshAgents in the scene by setting their speed to 0
         NavMeshAgent[] navAgents = FindObjectsOfType<NavMeshAgent>();
@@ -83,6 +86,28 @@ public class IncidentCountdown : MonoBehaviour
             if (animator != null)
             {
                 animator.SetBool("shocked", true); // Set the 'shocked' animation parameter to true
+            }
+        }
+    }
+
+    public void ActivateResponders()
+    {
+        StartCoroutine(ActivateRespondersWithDelay(2f)); // ← 2 seconden wachten
+    }
+
+    private IEnumerator ActivateRespondersWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay); // Wacht de opgegeven tijd
+
+        foreach (GameObject responder in responders)
+        {
+            if (responder != null)
+            {
+                var movement = responder.GetComponent<NPCMovement>();
+                if (movement != null)
+                {
+                    movement.enabled = true; // Zet hun movement script aan
+                }
             }
         }
     }

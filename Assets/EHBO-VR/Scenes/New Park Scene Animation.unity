@@ -9035,8 +9035,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6427314646774881993, guid: 292074ac2ace48e4c9100197f987ea8c, type: 3}
       propertyPath: countdownTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427314646774881993, guid: 292074ac2ace48e4c9100197f987ea8c, type: 3}
+      propertyPath: responders.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6427314646774881993, guid: 292074ac2ace48e4c9100197f987ea8c, type: 3}
+      propertyPath: 'responders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1942304180}
+    - target: {fileID: 6427314646774881993, guid: 292074ac2ace48e4c9100197f987ea8c, type: 3}
+      propertyPath: 'responders.Array.data[1]'
+      value: 
+      objectReference: {fileID: 537737907}
+    - target: {fileID: 6427314646774881993, guid: 292074ac2ace48e4c9100197f987ea8c, type: 3}
+      propertyPath: objectsToAnimate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427314646774881993, guid: 292074ac2ace48e4c9100197f987ea8c, type: 3}
+      propertyPath: 'objectsToAnimate.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1630443798}
     - target: {fileID: 6427314646774881993, guid: 292074ac2ace48e4c9100197f987ea8c, type: 3}
       propertyPath: 'objectsToAnimate.Array.data[1]'
       value: 
@@ -9810,7 +9830,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537737907}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2e82473b8654e74b89c5df43a5d57ac, type: 3}
   m_Name: 
@@ -9825,6 +9845,7 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 537737908}
   lookAtTarget: {fileID: 1630443797}
+  currentWaypoint: 0
 --- !u!1001 &537838248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14209,7 +14230,7 @@ Transform:
   m_GameObject: {fileID: 841582820}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.01, y: 0, z: -1.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28401,6 +28422,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 656510523729850169, guid: 1e702983913400042ac3fcd1173a6d37, type: 3}
   m_PrefabInstance: {fileID: 1630443796}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1630443798 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 413562869133271636, guid: 1e702983913400042ac3fcd1173a6d37, type: 3}
+  m_PrefabInstance: {fileID: 1630443796}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1634098177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34301,7 +34327,7 @@ Transform:
   m_GameObject: {fileID: 1905500512}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.59, y: 0, z: -2.81}
+  m_LocalPosition: {x: 6.95, y: 0, z: -1.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34771,7 +34797,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942304180}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2e82473b8654e74b89c5df43a5d57ac, type: 3}
   m_Name: 
@@ -34788,6 +34814,7 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 1942304181}
   lookAtTarget: {fileID: 1630443797}
+  currentWaypoint: 0
 --- !u!1001 &1947233034
 PrefabInstance:
   m_ObjectHideFlags: 0
