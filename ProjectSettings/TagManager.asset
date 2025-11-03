@@ -10,11 +10,12 @@ TagManager:
   - SecondCollider
   - FirstCollider
   - Car
+  - QDSUIBackplateGradient
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Overlay UI
   - Water
   - UI
   - 
@@ -42,7 +43,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - OVROverlayCanvas Rendering
   m_SortingLayers:
   - name: Default
     uniqueID: 0
