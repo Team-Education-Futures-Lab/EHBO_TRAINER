@@ -3599,8 +3599,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Shit man, je bent aangereden. Misschien moet je de volgende keer even wat
-    beter uitkijken voordat je oversteekt.
+  m_text: 'Helaas, je bent aangereden. Tip: Tijdens ongevallen is het ook belangrijk
+    om op je eigen veiligheid te letten.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -22958,7 +22958,7 @@ PrefabInstance:
       addedObject: {fileID: 1268979832}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1268979833}
+      addedObject: {fileID: 1268979838}
     - targetCorrespondingSourceObject: {fileID: 100010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2144027587}
@@ -23062,7 +23062,7 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1268979833
+--- !u!114 &1268979838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23071,9 +23071,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 589963419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ee7f807b16513c408b5ca0201603158, type: 3}
+  m_Script: {fileID: 11500000, guid: 66e6b2b2f4f54c0419ebca3afa4db758, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollision
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollisionCar
   hitText: {fileID: 197704444}
 --- !u!1001 &1269568630
 PrefabInstance:
