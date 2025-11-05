@@ -282,6 +282,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &166480898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 213546429348063262, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+  m_PrefabInstance: {fileID: 1613985395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &166480899 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3906129600862411400, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+  m_PrefabInstance: {fileID: 1613985395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &166480900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166480898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
+  TargetCanvas: {fileID: 166480901}
+--- !u!114 &166480901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166480898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 1
+  _dynamicResolution: 0
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 166480899}
+  maxTextureSize: 2048
+  manualRedraw: 1
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 1
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 2
+  _overlayEnabled: 1
 --- !u!1 &193673285 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7197655998991902467, guid: 066a48c42e0fbb046b6c8d1591b8bcb6, type: 3}
@@ -1092,9 +1143,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: start button
       objectReference: {fileID: 0}
+    - target: {fileID: 5824888959385007984, guid: 4bf459842f45eb648a8e314fa01c55b6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5824888959385007990, guid: 4bf459842f45eb648a8e314fa01c55b6, type: 3}
       propertyPath: m_text
       value: tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824888959385007990, guid: 4bf459842f45eb648a8e314fa01c55b6, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5824888960547933767, guid: 4bf459842f45eb648a8e314fa01c55b6, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
@@ -1140,8 +1199,179 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5824888959385007984, guid: 4bf459842f45eb648a8e314fa01c55b6, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 2099528862}
+    - targetCorrespondingSourceObject: {fileID: 5824888959385007984, guid: 4bf459842f45eb648a8e314fa01c55b6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2099528861}
+    - targetCorrespondingSourceObject: {fileID: 5824888959385007984, guid: 4bf459842f45eb648a8e314fa01c55b6, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4bf459842f45eb648a8e314fa01c55b6, type: 3}
+--- !u!1 &806197642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 531264845835054097, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
+  m_PrefabInstance: {fileID: 979954415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &806197643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806197642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 1
+  _dynamicResolution: 0
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 806197646}
+  maxTextureSize: 2048
+  manualRedraw: 1
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 1
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 2
+  _overlayEnabled: 1
+--- !u!224 &806197646 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 478748276222933279, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
+  m_PrefabInstance: {fileID: 979954415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &834452713 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1312776766878738240, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+  m_PrefabInstance: {fileID: 1939151098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &834452714 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5182177067493622449, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+  m_PrefabInstance: {fileID: 1939151098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &834452715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834452713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
+  TargetCanvas: {fileID: 834452716}
+--- !u!114 &834452716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834452713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 1
+  _dynamicResolution: 0
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 834452714}
+  maxTextureSize: 2048
+  manualRedraw: 1
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 1
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 2
+  _overlayEnabled: 1
+--- !u!1 &864187391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 232253350404727599, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+  m_PrefabInstance: {fileID: 959821429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &864187392 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1113275511580055171, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+  m_PrefabInstance: {fileID: 959821429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &864187393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864187391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 1
+  _dynamicResolution: 0
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 864187392}
+  maxTextureSize: 2048
+  manualRedraw: 1
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 1
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 2
+  _overlayEnabled: 1
+--- !u!1 &897264469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 232253351935260670, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+  m_PrefabInstance: {fileID: 959821429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &897264470 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1113275510154379858, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+  m_PrefabInstance: {fileID: 959821429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &897264471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897264469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 1
+  _dynamicResolution: 0
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 897264470}
+  maxTextureSize: 2048
+  manualRedraw: 1
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 1
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 2
+  _overlayEnabled: 1
 --- !u!1 &905436713 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2739236472282577061, guid: 066a48c42e0fbb046b6c8d1591b8bcb6, type: 3}
@@ -1612,6 +1842,82 @@ MonoBehaviour:
   taskToComplete: maak stop handteken
   objectsToDeActivateOnEnter: []
   objectsToActivateOnExit: []
+--- !u!1 &918912777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8749818802765317047, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+  m_PrefabInstance: {fileID: 959821429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &918912778 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8441890622583223835, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+  m_PrefabInstance: {fileID: 959821429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &918912779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918912777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 1
+  _dynamicResolution: 0
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 918912778}
+  maxTextureSize: 2048
+  manualRedraw: 1
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 1
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 2
+  _overlayEnabled: 1
+--- !u!1 &929397162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 232253351739101219, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+  m_PrefabInstance: {fileID: 959821429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &929397163 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1113275510229034383, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+  m_PrefabInstance: {fileID: 959821429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &929397164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929397162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 1
+  _dynamicResolution: 0
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 929397163}
+  maxTextureSize: 2048
+  manualRedraw: 1
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 1
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 2
+  _overlayEnabled: 1
 --- !u!1001 &959821429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1620,6 +1926,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1818235642}
     m_Modifications:
+    - target: {fileID: 232253350404727599, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 232253351739101219, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 232253351935260670, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 839469723960199697, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_text
       value: grijp geactiveerd
@@ -1643,6 +1961,14 @@ PrefabInstance:
     - target: {fileID: 1113275511580055171, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112180760282242227, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550271003046725805, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3102610100015971761, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1896,6 +2222,30 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6426875337485625397, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426875339355822905, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426875339484871908, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429604385680484602, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429604385805061927, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429604386064661547, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8210868760841497225, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_text
       value: klembord
@@ -1904,10 +2254,26 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8749818802765317047, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 232253350404727599, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 864187393}
+    - targetCorrespondingSourceObject: {fileID: 232253351935260670, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 897264471}
+    - targetCorrespondingSourceObject: {fileID: 8749818802765317047, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 918912779}
+    - targetCorrespondingSourceObject: {fileID: 232253351739101219, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 929397164}
   m_SourcePrefab: {fileID: 100100000, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
 --- !u!4 &959821430 stripped
 Transform:
@@ -1922,6 +2288,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 586361839}
     m_Modifications:
+    - target: {fileID: 531264845835054097, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2589893661405651569, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8602449323454011972, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       propertyPath: m_Name
       value: OculusInteractionSampleRig
@@ -1981,7 +2355,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 531264845835054097, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 806197643}
   m_SourcePrefab: {fileID: 100100000, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
 --- !u!4 &979954416 stripped
 Transform:
@@ -2021,6 +2398,95 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a379f34d4f4f2e408d34f14bfb753ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1032422903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1071927283624916332, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+  m_PrefabInstance: {fileID: 4194467016210923273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1032422904 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6464557524280174059, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+  m_PrefabInstance: {fileID: 4194467016210923273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1032422905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032422903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 1
+  _dynamicResolution: 0
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 1032422904}
+  maxTextureSize: 2048
+  manualRedraw: 1
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 1
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 2
+  _overlayEnabled: 1
+--- !u!1 &1190148435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1848599884658665169, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+  m_PrefabInstance: {fileID: 1939151098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1190148436 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4455257680848196779, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+  m_PrefabInstance: {fileID: 1939151098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1190148437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190148435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
+  TargetCanvas: {fileID: 1190148438}
+--- !u!114 &1190148438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190148435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 1
+  _dynamicResolution: 0
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 1190148436}
+  maxTextureSize: 2048
+  manualRedraw: 1
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 1
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 2
+  _overlayEnabled: 1
 --- !u!1 &1296495623
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,6 +2660,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 677068258}
     m_Modifications:
+    - target: {fileID: 213546429348063262, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 489046541096738102, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: clipboardTasks
       value: 
@@ -2270,6 +2740,14 @@ PrefabInstance:
       propertyPath: completionCanvas
       value: 
       objectReference: {fileID: 442444510}
+    - target: {fileID: 3318211792947826659, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6347879806322506780, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 7345525065670645281, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: m_Name
       value: phone1k (1)
@@ -2322,13 +2800,29 @@ PrefabInstance:
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8759125421188981363, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 213546429348063262, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 166480901}
+    - targetCorrespondingSourceObject: {fileID: 213546429348063262, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 166480900}
+    - targetCorrespondingSourceObject: {fileID: 213546429348063262, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8759125421188981363, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1640043920}
+    - targetCorrespondingSourceObject: {fileID: 8759125421188981363, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1640043919}
     - targetCorrespondingSourceObject: {fileID: 8759125421188981363, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -2354,6 +2848,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf9f61edbe01274daf8046b08dc8f4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1640043917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8759125421188981363, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+  m_PrefabInstance: {fileID: 1613985395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1640043918 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7002836316938746571, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+  m_PrefabInstance: {fileID: 1613985395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1640043919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640043917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
+  TargetCanvas: {fileID: 1640043920}
+--- !u!114 &1640043920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640043917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 1
+  _dynamicResolution: 0
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 1640043918}
+  maxTextureSize: 2048
+  manualRedraw: 1
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 1
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 2
+  _overlayEnabled: 1
 --- !u!1 &1693019898
 GameObject:
   m_ObjectHideFlags: 0
@@ -2365,7 +2910,9 @@ GameObject:
   - component: {fileID: 1693019899}
   - component: {fileID: 1693019901}
   - component: {fileID: 1693019900}
-  m_Layer: 0
+  - component: {fileID: 1693019903}
+  - component: {fileID: 1693019902}
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2533,6 +3080,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1693019902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693019898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
+  TargetCanvas: {fileID: 1693019903}
+--- !u!114 &1693019903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693019898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 1
+  _dynamicResolution: 0
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 1693019899}
+  maxTextureSize: 2048
+  manualRedraw: 1
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 1
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 2
+  _overlayEnabled: 1
 --- !u!1001 &1818235641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2709,6 +3297,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 554863350}
     m_Modifications:
+    - target: {fileID: 20599316876922518, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 815209728225351868, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312776766878738240, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848599884658665169, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3081719161591378170, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
       propertyPath: m_Name
       value: Victem
@@ -2778,7 +3382,19 @@ PrefabInstance:
       addedObject: {fileID: 1939151101}
     - targetCorrespondingSourceObject: {fileID: 1312776766878738240, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 834452716}
+    - targetCorrespondingSourceObject: {fileID: 1312776766878738240, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 834452715}
+    - targetCorrespondingSourceObject: {fileID: 1312776766878738240, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1848599884658665169, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1190148438}
+    - targetCorrespondingSourceObject: {fileID: 1848599884658665169, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1190148437}
     - targetCorrespondingSourceObject: {fileID: 1848599884658665169, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -2931,6 +3547,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 066a48c42e0fbb046b6c8d1591b8bcb6, type: 3}
   m_PrefabInstance: {fileID: 2077649663}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2099528859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5824888959385007984, guid: 4bf459842f45eb648a8e314fa01c55b6, type: 3}
+  m_PrefabInstance: {fileID: 805334784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2099528860 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5824888959385007991, guid: 4bf459842f45eb648a8e314fa01c55b6, type: 3}
+  m_PrefabInstance: {fileID: 805334784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2099528861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099528859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
+  TargetCanvas: {fileID: 2099528862}
+--- !u!114 &2099528862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099528859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
+  _enableMipmapping: 1
+  _dynamicResolution: 0
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 2099528860}
+  maxTextureSize: 2048
+  manualRedraw: 1
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 1
+  shape: 0
+  curveRadius: 1
+  overlapMask: 0
+  overlayType: 2
+  _overlayEnabled: 1
 --- !u!4 &2112494974 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8149640132073612291, guid: 5fca3702cdf1a214a94e69dcfa704e17, type: 3}
@@ -3098,6 +3765,58 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 677068258}
     m_Modifications:
+    - target: {fileID: 1071927283624916332, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165886187159227158, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227627564157693414, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1359684531444638129, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363196819587486650, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2383793112662417677, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049516562110274644, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249577507444425030, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440163385183154944, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4649202430580445622, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088004363891427098, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571687176503202970, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858596785164007195, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6934508192956687999, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: m_Name
       value: clipboard grabable
@@ -3146,6 +3865,10 @@ PrefabInstance:
       propertyPath: _rigidbody
       value: 
       objectReference: {fileID: 4194467016210923278}
+    - target: {fileID: 8356539936226937647, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: completionSound
       value: 
@@ -3178,13 +3901,24 @@ PrefabInstance:
       propertyPath: tasks.Array.data[3].taskImage
       value: 
       objectReference: {fileID: 1517576020}
+    - target: {fileID: 8660165561375637775, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9053403672936076029, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3256466350574215119, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8940657355304793666, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
     - {fileID: 6048908130824924888, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1071927283624916332, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1032422905}
   m_SourcePrefab: {fileID: 100100000, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
 --- !u!4 &4194467016210923274 stripped
 Transform:

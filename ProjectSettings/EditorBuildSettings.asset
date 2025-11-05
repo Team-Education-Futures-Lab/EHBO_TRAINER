@@ -6,12 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Ryan Putman/Scenes/mini usertest scene.unity
+    path: Assets/EHBO-VR/Scenes/Tutorial scene.unity
     guid: 9aa3ab4411c29d249b102d5bb5938c30
   - enabled: 1
-    path: Assets/Ryan Putman/Scenes/Park Quest 3 test scene.unity
+    path: Assets/EHBO-VR/Scenes/Park scene.unity
     guid: 5a902de27ff00e547ab4e2569d6141de
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3a3e484f4c4165740b0608a7a1641fd8, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 92cc549947382374faac588cb0f898cb, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 49045fa6f7cf1f04c8da7138919c2e10, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 100ab2716282c524c91381b65ccacc22, type: 2}
+  m_UseUCBPForAssetBundles: 0
