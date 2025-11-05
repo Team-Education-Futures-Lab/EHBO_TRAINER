@@ -92,7 +92,7 @@ public class IncidentCountdown : MonoBehaviour
 
     public void ActivateResponders()
     {
-        StartCoroutine(ActivateRespondersWithDelay(2f)); // ← 2 seconden wachten
+        StartCoroutine(ActivateRespondersWithDelay(3f)); // ← 2 seconden wachten
     }
 
     private IEnumerator ActivateRespondersWithDelay(float delay)
