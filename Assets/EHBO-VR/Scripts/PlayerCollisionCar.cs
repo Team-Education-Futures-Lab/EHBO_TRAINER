@@ -1,5 +1,7 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollisionCar : MonoBehaviour
 {
@@ -22,7 +24,18 @@ public class PlayerCollisionCar : MonoBehaviour
             hitText.enabled = true;
 
             ovrPlayerController.enabled = false;
-            Time.timeScale = 0f;
+           
+
+            StartCoroutine(RestartGameAfterDelay(3f));
         }
+    }
+    private IEnumerator RestartGameAfterDelay(float delay)
+    {
+        Debug.Log("Game wordt opnieuw gestart over " + delay + " seconden...");
+        yield return new WaitForSecondsRealtime(delay);
+
+        // Huidige scene herladen
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
 }

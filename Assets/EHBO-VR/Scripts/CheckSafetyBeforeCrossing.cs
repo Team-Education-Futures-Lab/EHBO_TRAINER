@@ -10,13 +10,16 @@ public class CheckSafetyBeforeCrossing : MonoBehaviour
     private bool lookedLeft = false;
     private bool lookedRight = false;
     private bool readyToCross = false;
-
     private float startYRotation;
+
+    public Animator carAnimator; // Animator van de auto
+    private bool hasTriggered;
 
     void Start()
     {
         // We onthouden de startrotatie van de speler
         startYRotation = playerHead.eulerAngles.y;
+        
     }
 
     void Update()
@@ -39,10 +42,34 @@ public class CheckSafetyBeforeCrossing : MonoBehaviour
             Debug.Log("Je hebt naar links en rechts gekeken! Je mag nu veilig oversteken.");
             // Hier kun je bv. een event aanroepen of de weg vrijgeven
         }
+        
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player") && !readyToCross && !hasTriggered)
+        {
+            Debug.Log("Speler heeft de trigger geraakt zonder te kijken!");
+            SetCarAnimationTo21Seconds();
+            hasTriggered = true;
+        }
+    }
+
+
+    public void SetCarAnimationTo21Seconds()
+    {
+        if (carAnimator != null)
+        {
+            float normalizedTime = 21f / 27f;
+            carAnimator.Play(carAnimator.GetCurrentAnimatorStateInfo(0).shortNameHash, 0, normalizedTime);
+            carAnimator.Update(0f);
+            Debug.Log("Auto animatie gezet op 21 seconden van 27 seconden.");
+        }
     }
 
     public bool HasLookedBothWays()
     {
         return readyToCross;
     }
+
+    
 }
