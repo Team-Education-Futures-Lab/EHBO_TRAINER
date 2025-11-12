@@ -15258,7 +15258,7 @@ MonoBehaviour:
   currentState: 1
   walkSpeed: 3
   runSpeed: 6
-  waitTime: 2
+  waitTime: 0.2
   loopPath: 1
   animator: {fileID: 825085404}
   lookAtTarget: {fileID: 0}

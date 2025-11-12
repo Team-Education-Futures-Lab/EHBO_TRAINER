@@ -26,7 +26,7 @@ public class PlayerCollisionCar : MonoBehaviour
             ovrPlayerController.enabled = false;
            
 
-            StartCoroutine(RestartGameAfterDelay(3f));
+            StartCoroutine(RestartGameAfterDelay(4f));
         }
     }
     private IEnumerator RestartGameAfterDelay(float delay)
