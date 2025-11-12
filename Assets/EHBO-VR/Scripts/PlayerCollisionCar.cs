@@ -6,6 +6,8 @@ public class PlayerCollisionCar : MonoBehaviour
     private bool gotHit = false;
     public TextMeshProUGUI hitText;
 
+    public OVRPlayerController ovrPlayerController;
+
     private void Start()
     {
         hitText.enabled = false;
@@ -19,6 +21,8 @@ public class PlayerCollisionCar : MonoBehaviour
             gotHit = true;
             hitText.enabled = true;
 
+            ovrPlayerController.enabled = false;
+            Time.timeScale = 0f;
         }
     }
 }

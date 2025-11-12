@@ -143,8 +143,21 @@ public class NPCMovement : MonoBehaviour
     // ===============================
     private void LookAtTarget()
     {
-        Vector3 lookDirection = (lookAtTarget.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(lookDirection);
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 2f);
+        //Makes a copy of the targets position
+        Vector3 targetPos = new Vector3(lookAtTarget.position.x, transform.position.y, lookAtTarget.position.z);
+
+        //Calculates the direction
+        Vector3 lookDirection = (targetPos - transform.position).normalized;
+
+        // Only rotate if there is a valid direction
+        if (lookDirection != Vector3.zero)
+        {
+            // Create a rotation that looks in the direction of the target
+            Quaternion lookRotation = Quaternion.LookRotation(lookDirection);
+
+            // Smoothly rotate from the current rotation to the target rotation
+            // The 2f value controls how fast the NPC turns
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 2f);
+        }
     }
 }
