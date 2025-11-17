@@ -21278,15 +21278,15 @@ PrefabInstance:
       objectReference: {fileID: 1842427709}
     - target: {fileID: 2926222617388792329, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.39
+      value: 31.81
       objectReference: {fileID: 0}
     - target: {fileID: 2926222617388792329, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.90232
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2926222617388792329, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 53.24
+      value: 166.39
       objectReference: {fileID: 0}
     - target: {fileID: 2926222617388792329, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21332,6 +21332,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7056215657879288680, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056215657879288680, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056215657879288680, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7056215657886143140, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
       propertyPath: Damping
       value: 1.5
@@ -21346,6 +21358,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7056215657886143140, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
       propertyPath: SnapRotation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056215657886143148, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
+      propertyPath: _trackingOriginType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056215657886143148, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
+      propertyPath: dynamicResolutionVersion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056215657886143148, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
+      propertyPath: quest2MaxDynamicResolutionScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056215657886143148, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
+      propertyPath: quest2MinDynamicResolutionScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056215657886143148, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
+      propertyPath: quest3MaxDynamicResolutionScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056215657886143148, guid: 8e05c415dda09514191a198fdcc98064, type: 3}
+      propertyPath: quest3MinDynamicResolutionScale
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
