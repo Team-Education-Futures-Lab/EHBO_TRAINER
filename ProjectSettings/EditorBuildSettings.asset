@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/EHBO-VR/Scenes/Tutorial scene.unity
     guid: 9aa3ab4411c29d249b102d5bb5938c30
   - enabled: 1
-    path: Assets/EHBO-VR/Scenes/Park scene.unity
-    guid: 5a902de27ff00e547ab4e2569d6141de
+    path: Assets/EHBO-VR/Scenes/New Park Scene Animation.unity
+    guid: 8b2ad5afdf3ee974385fb50d2f125674
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3a3e484f4c4165740b0608a7a1641fd8, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 92cc549947382374faac588cb0f898cb, type: 2}
