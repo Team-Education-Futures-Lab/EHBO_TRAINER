@@ -1,3 +1,4 @@
+using Oculus.Interaction.Locomotion;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -8,7 +9,7 @@ public class PlayerCollisionCar : MonoBehaviour
     private bool gotHit = false;
     public TextMeshProUGUI hitText;
 
-    public OVRPlayerController ovrPlayerController;
+    public FirstPersonLocomotor locomotor;
 
     private void Start()
     {
@@ -23,7 +24,7 @@ public class PlayerCollisionCar : MonoBehaviour
             gotHit = true;
             hitText.enabled = true;
 
-            ovrPlayerController.enabled = false;
+            locomotor.enabled = false;
 
             Animator carAnimator = other.GetComponent<Animator>();
             if (carAnimator != null)
