@@ -237,6 +237,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d6d7a3bdb461c4e9490b0211da41a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClipboardAnimation
+  animator: {fileID: 16436168}
+  animationName: Clipboard
+  pauseTime: 6
 --- !u!1001 &19496926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2121,6 +2124,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3466950876407638983, guid: 6cd1b0c4ad240844e807b203ef080535, type: 3}
   m_PrefabInstance: {fileID: 93973715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &96595112 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2482555307681320698, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+  m_PrefabInstance: {fileID: 644290990}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &100892782
 PrefabInstance:
@@ -11883,21 +11891,113 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1853202853}
     m_Modifications:
+    - target: {fileID: 119038617053915495, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0295
+      objectReference: {fileID: 0}
+    - target: {fileID: 957320407636200310, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: _pointableElement
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121722730735774505, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_text
+      value: 'Stap 4: Vragen wat er is gebeurt'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121722730735774505, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_margin.x
+      value: 0.39420223
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121722730735774505, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1121722730735774505, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 1623781078620402803, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: _pointableElement
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742804852631563567, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742804852631563567, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0444
+      objectReference: {fileID: 0}
+    - target: {fileID: 2850065317541996481, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_text
+      value: 'Stap 2: Ga naar het slachtoffer'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2850065317541996481, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_margin.x
+      value: 0.394568
+      objectReference: {fileID: 0}
+    - target: {fileID: 2850065317541996481, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2850065317541996481, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
       objectReference: {fileID: 0}
+    - target: {fileID: 4592571757169821331, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592571757169821331, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0592
+      objectReference: {fileID: 0}
+    - target: {fileID: 4735252418631037436, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_text
+      value: 'Stap 3: Ruimte maken voor het slachtoffer'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4735252418631037436, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_margin.x
+      value: 0.39407778
+      objectReference: {fileID: 0}
+    - target: {fileID: 4735252418631037436, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4735252418631037436, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
       objectReference: {fileID: 0}
+    - target: {fileID: 5542106742251930620, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741305599828600826, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_text
+      value: 'Stap 1: Veiligheid'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741305599828600826, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_margin.x
+      value: 0.39493343
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741305599828600826, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6741305599828600826, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807117011302208600, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_text
+      value: 'Stap 5: controleer bewustzijn. Spreek aan, schud voorzichtig'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807117011302208600, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_margin.x
+      value: 0.3929809
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807117011302208600, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6807117011302208600, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
@@ -11971,6 +12071,38 @@ PrefabInstance:
       propertyPath: _pointableElement
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8076920992921720918, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8076920992921720918, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0143
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: tasks.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: tasks.Array.data[0].taskImage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: tasks.Array.data[1].taskImage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: tasks.Array.data[2].taskImage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: tasks.Array.data[3].taskImage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: tasks.Array.data[4].taskImage
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7565660458783913461, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
     - {fileID: 7983105717069596971, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
@@ -11979,8 +12111,19 @@ PrefabInstance:
     - {fileID: 6721809774493447999, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
     - {fileID: 1102904185946087756, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
     - {fileID: 7432985756722914635, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    - {fileID: 1181901706111997916, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+    - {fileID: 957320407636200310, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+    - {fileID: 1623781078620402803, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 8356539936226937647, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+    - {fileID: 2363196819587486650, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2482555307681320698, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1459961072}
+    - targetCorrespondingSourceObject: {fileID: 2482555307681320698, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1579096136}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6934508192956687999, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       insertIndex: -1
@@ -27893,6 +28036,142 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2847952609375012767, guid: 4ab518db7d743844a826e15eb46a4711, type: 3}
   m_PrefabInstance: {fileID: 1459275587}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1459961071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1459961072}
+  - component: {fileID: 1459961074}
+  - component: {fileID: 1459961073}
+  m_Layer: 5
+  m_Name: Text (TMP) (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1459961072
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459961071}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 96595112}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.0845}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1459961073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459961071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Stap 6: Checken of zijn airway nog vrij is via kinlift'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 0.01
+  m_fontSizeBase: 0.01
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0.3929809, y: 0.4352189, z: 0.40451226, w: 0.5470052}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1459961074
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459961071}
+  m_CullTransparentMesh: 1
 --- !u!1 &1460296269
 GameObject:
   m_ObjectHideFlags: 0
@@ -29738,6 +30017,142 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7080858968819370759, guid: e711389017b7936479ed42454596049c, type: 3}
   m_PrefabInstance: {fileID: 1567874652}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1579096135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1579096136}
+  - component: {fileID: 1579096138}
+  - component: {fileID: 1579096137}
+  m_Layer: 5
+  m_Name: Text (TMP) (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1579096136
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579096135}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 96595112}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.1089}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1579096137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579096135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Stap 8: Geen ademhaling: laat iemand 112 bellen en een AED halen'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 0.01
+  m_fontSizeBase: 0.01
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0.3929809, y: 0.4352189, z: 0.40451226, w: 0.5470052}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1579096138
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579096135}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1586267020
 PrefabInstance:
   m_ObjectHideFlags: 0
