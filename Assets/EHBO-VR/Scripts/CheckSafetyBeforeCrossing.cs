@@ -59,7 +59,7 @@ public class CheckSafetyBeforeCrossing : MonoBehaviour
     {
         if (carAnimator != null)
         {
-            float normalizedTime = 21f / 27f;
+            float normalizedTime = 21.3f / 27f;
             carAnimator.Play(carAnimator.GetCurrentAnimatorStateInfo(0).shortNameHash, 0, normalizedTime);
             carAnimator.Update(0f);
             Debug.Log("Auto animatie gezet op 21 seconden van 27 seconden.");

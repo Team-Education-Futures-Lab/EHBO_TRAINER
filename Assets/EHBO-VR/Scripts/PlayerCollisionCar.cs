@@ -24,7 +24,12 @@ public class PlayerCollisionCar : MonoBehaviour
             hitText.enabled = true;
 
             ovrPlayerController.enabled = false;
-           
+
+            Animator carAnimator = other.GetComponent<Animator>();
+            if (carAnimator != null)
+            {
+                carAnimator.enabled = false;
+            }
 
             StartCoroutine(RestartGameAfterDelay(4f));
         }
