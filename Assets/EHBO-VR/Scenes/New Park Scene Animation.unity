@@ -11073,7 +11073,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1905500513}
   - {fileID: 841582821}
-  currentState: 2
+  currentState: 0
   walkSpeed: 3
   runSpeed: 6
   waitTime: 0
@@ -39188,7 +39188,7 @@ MonoBehaviour:
   - {fileID: 846613046}
   - {fileID: 2023307827}
   - {fileID: 452632446}
-  currentState: 2
+  currentState: 0
   walkSpeed: 3
   runSpeed: 6
   waitTime: 0
