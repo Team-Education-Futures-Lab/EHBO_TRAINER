@@ -15010,9 +15010,9 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 9d83a47c0e418f8489e84b6d9a47ed58, type: 3}
-        m_TargetAssemblyTypeName: UnityEditor.MonoScript, UnityEditor.CoreModule
-        m_MethodName: set_name
+      - m_Target: {fileID: 1208520021}
+        m_TargetAssemblyTypeName: scenetransition, Assembly-CSharp
+        m_MethodName: SwitchToScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15049,6 +15049,18 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1208520021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208520017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d83a47c0e418f8489e84b6d9a47ed58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::scenetransition
 --- !u!1001 &1211342665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15202,6 +15214,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5919106134362994299, guid: 5fca3702cdf1a214a94e69dcfa704e17, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1208520020}
+    - targetCorrespondingSourceObject: {fileID: 5919106134362994299, guid: 5fca3702cdf1a214a94e69dcfa704e17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1208520021}
   m_SourcePrefab: {fileID: 100100000, guid: 5fca3702cdf1a214a94e69dcfa704e17, type: 3}
 --- !u!1001 &1215591338
 PrefabInstance:
@@ -15436,6 +15451,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3102610100015971761, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102610100015971761, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -15528,6 +15547,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4460798559174874184, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460798559174874184, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -15560,6 +15583,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5166552642023437520, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166552642023437520, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -15632,6 +15659,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5862023790286167337, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862023790286167337, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -15678,6 +15709,10 @@ PrefabInstance:
     - target: {fileID: 5862023790738754040, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862023790738754040, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9
       objectReference: {fileID: 0}
     - target: {fileID: 5862023790738754040, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -22289,7 +22324,7 @@ PrefabInstance:
     - target: {fileID: 8716332028842218484, guid: f744d96b06d4a3b43b62cc32fe624d26, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2089268486}
+      objectReference: {fileID: 0}
     - target: {fileID: 8716332028842218484, guid: f744d96b06d4a3b43b62cc32fe624d26, type: 3}
       propertyPath: _whenUnselected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -22297,7 +22332,7 @@ PrefabInstance:
     - target: {fileID: 8716332028842218484, guid: f744d96b06d4a3b43b62cc32fe624d26, type: 3}
       propertyPath: _whenUnselected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2089268486}
+      objectReference: {fileID: 0}
     - target: {fileID: 8716332028842218484, guid: f744d96b06d4a3b43b62cc32fe624d26, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EnableGrabbing
@@ -26053,9 +26088,7 @@ GameObject:
   - component: {fileID: 2089268491}
   - component: {fileID: 2089268490}
   - component: {fileID: 2089268489}
-  - component: {fileID: 2089268488}
   - component: {fileID: 2089268487}
-  - component: {fileID: 2089268486}
   - component: {fileID: 2089268485}
   - component: {fileID: 2089268484}
   m_Layer: 0
@@ -26138,20 +26171,6 @@ MonoBehaviour:
   taskToComplete: grijp de kubus
   objectsToDeActivateOnEnter: []
   objectsToActivateOnExit: []
---- !u!114 &2089268486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089268482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db3c91704df52e149bf53defec5ed133, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newMaterial: {fileID: 2100000, guid: 690878faf86030e44bde4adb9a4e6467, type: 2}
-  isGrabbing: 0
 --- !u!114 &2089268487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26174,20 +26193,6 @@ MonoBehaviour:
   _rigidbody: {fileID: 2089268489}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
---- !u!114 &2089268488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089268482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db3c91704df52e149bf53defec5ed133, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newMaterial: {fileID: 2100000, guid: 690878faf86030e44bde4adb9a4e6467, type: 2}
-  isGrabbing: 0
 --- !u!54 &2089268489
 Rigidbody:
   m_ObjectHideFlags: 0
