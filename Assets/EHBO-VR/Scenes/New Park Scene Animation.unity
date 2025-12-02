@@ -12293,6 +12293,7 @@ GameObject:
   - component: {fileID: 640684631}
   - component: {fileID: 640684633}
   - component: {fileID: 640684632}
+  - component: {fileID: 640684634}
   m_Layer: 3
   m_Name: ScenarioSteps
   m_TagString: Untagged
@@ -12461,6 +12462,14 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &640684634
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640684630}
+  m_Mesh: {fileID: 0}
 --- !u!1 &649852432 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7032835409953742253, guid: b12952e62525ed648967814a075216b6, type: 3}
@@ -21998,7 +22007,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Scenrario Steps
+  m_text: 'Scenario Steps
 
 
 '
