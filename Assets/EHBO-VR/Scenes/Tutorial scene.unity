@@ -13207,6 +13207,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 371388997940935703, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
+      propertyPath: m_FadeMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 371388997940935703, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
+      propertyPath: m_AnimateCrossFading
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2792499861452184002, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.572
@@ -13266,6 +13274,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3281755754987455352, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1565568145}
+    - targetCorrespondingSourceObject: {fileID: 3281755754987455352, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1565568148}
   m_SourcePrefab: {fileID: 100100000, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
 --- !u!4 &1565568143 stripped
 Transform:
@@ -13309,6 +13320,20 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 4700641943394876169, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
   m_PrefabInstance: {fileID: 1565568142}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1565568148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565568144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c926025dc99082346be6a7202f87e928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCBlink
+  blinkInterval: 0.7
+  blinkCount: 30
 --- !u!1001 &1569017890
 PrefabInstance:
   m_ObjectHideFlags: 0
