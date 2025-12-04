@@ -11,6 +11,7 @@ TagManager:
   - FirstCollider
   - Car
   - QDSUIBackplateGradient
+  - NPCPlayer
   layers:
   - Default
   - TransparentFX
