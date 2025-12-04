@@ -14009,6 +14009,7 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 1565568146}
   lookAtTarget: {fileID: 1052837344}
+  playerTransitionScript: {fileID: 1565568150}
 --- !u!95 &1565568146 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4700641943394876169, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
@@ -14029,6 +14030,8 @@ MonoBehaviour:
   blinkInterval: 0.2
   blinkCount: 6
   scriptToActivate: {fileID: 1565568145}
+  animator: {fileID: 1565568146}
+  isInTransition: 0
 --- !u!65 &1565568151
 BoxCollider:
   m_ObjectHideFlags: 0

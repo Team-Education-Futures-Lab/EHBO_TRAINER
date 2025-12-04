@@ -20,6 +20,8 @@ public class NPCMovement : MonoBehaviour
     private int currentWaypoint = 0;
     private bool isWaiting = false;
 
+    public PlayerTransitionToTutorial playerTransitionScript;
+
     void Update()
     {
         if (waypoints.Length == 0) return;
@@ -136,6 +138,11 @@ public class NPCMovement : MonoBehaviour
         currentState = MoveState.Idle;
         animator.SetFloat("Speed", 0f);
         //lookAtTarget happends now in update()
+
+        if (playerTransitionScript != null && playerTransitionScript.isInTransition)
+        {
+            animator.SetTrigger("Sit");
+        }
     }
 
     // ===============================
