@@ -20,6 +20,7 @@ public class PlayerTransitionToTutorial : MonoBehaviour
         // Zet het script uit totdat nodig
         if (scriptToActivate != null)
             scriptToActivate.enabled = false;
+        ActivatePlayer();
     }
 
     // Deze functie kan je koppelen aan een VR-knop
