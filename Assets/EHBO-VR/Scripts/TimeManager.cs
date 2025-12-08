@@ -48,4 +48,17 @@ public class TimeManager : MonoBehaviour
         Timer.text = $"{minutes:0}:{seconds:00}";
         timerSlider.value = TimeInSeconds;
     }
+    public void ResetTimer(float timeInSeconds)
+    {
+        TimeInSeconds = timeInSeconds;
+        timerSlider.maxValue = TimeInSeconds;
+        timerSlider.value = TimeInSeconds;
+
+        int minutes = Mathf.FloorToInt(TimeInSeconds / 60);
+        int seconds = Mathf.FloorToInt(TimeInSeconds % 60);
+        Timer.text = $"{minutes:0}:{seconds:00}";
+
+        stopTimer = false;
+    }
+
 }
