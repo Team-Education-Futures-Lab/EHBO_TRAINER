@@ -11058,6 +11058,7 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 535587797}
   lookAtTarget: {fileID: 0}
+  playerTransitionScript: {fileID: 0}
 --- !u!95 &535587797 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4700641943394876169, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
@@ -11160,6 +11161,7 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 537737908}
   lookAtTarget: {fileID: 1630443797}
+  playerTransitionScript: {fileID: 0}
 --- !u!1001 &537838248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14621,6 +14623,7 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 796047357}
   lookAtTarget: {fileID: 0}
+  playerTransitionScript: {fileID: 0}
 --- !u!95 &796047357 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6552038334694914026, guid: be6cb4f0791ad3a4a80b41c3177f0aba, type: 3}
@@ -15187,6 +15190,7 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 808431209}
   lookAtTarget: {fileID: 0}
+  playerTransitionScript: {fileID: 0}
 --- !u!95 &808431209 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6552038334694914026, guid: be6cb4f0791ad3a4a80b41c3177f0aba, type: 3}
@@ -15934,6 +15938,7 @@ MonoBehaviour:
   loopPath: 1
   animator: {fileID: 825085404}
   lookAtTarget: {fileID: 0}
+  playerTransitionScript: {fileID: 0}
 --- !u!95 &825085404 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1259589323537842031, guid: 80e578b2d7250b542b1c305c12391f3e, type: 3}
@@ -22007,7 +22012,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Scenario Steps
+  m_text: 'Scenario Stappen
 
 
 '
@@ -39243,6 +39248,7 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 1942304181}
   lookAtTarget: {fileID: 1630443797}
+  playerTransitionScript: {fileID: 0}
 --- !u!1001 &1947233034
 PrefabInstance:
   m_ObjectHideFlags: 0

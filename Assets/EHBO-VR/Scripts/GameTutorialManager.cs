@@ -78,15 +78,15 @@ public class GameTutorialManager : MonoBehaviour
 
             case 1:
                 tutorialTexts[0].text = "2/3";
-                tutorialTexts[1].text = "VR hands introductie";
-                tutorialTexts[2].text = "Tijdens het reanimeren zul je een aantal handelingen moeten uitvoeren. Deze handelingen zul je kunnen doen met je handen in VR. Als je je handen voor je houd zie je een holgram van je handen. ";
+                tutorialTexts[1].text = "VR handen introductie";
+                tutorialTexts[2].text = "Tijdens het reanimeren zul je een aantal handelingen moeten uitvoeren. Deze handelingen zul je kunnen doen met je handen in VR.";
                 timeManager.ResetTimer(0f);
                 break;
 
             case 2:
                 tutorialTexts[0].text = "3/3";
-                tutorialTexts[1].text = "VR hand gestures introductie";
-                tutorialTexts[2].text = "Je zult een aantal hand gestures moeten gebruiken tijdens het scenario. Hier komen ze:";
+                tutorialTexts[1].text = "VR hand gebaren introductie";
+                tutorialTexts[2].text = "Je zult een aantal hand gestures moeten gebruiken tijdens het scenario.";
                 break;
         }
     }
