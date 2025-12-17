@@ -3034,7 +3034,7 @@ RectTransform:
   m_GameObject: {fileID: 244348171}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.31701845, y: 0.31701845, z: 0.31701845}
+  m_LocalScale: {x: 0.49182895, y: 0.49182895, z: 0.49182895}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1944682604}
@@ -3057,14 +3057,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 20b182937e38f92468b6758b47ea1ac1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 38f18b9174f27a54fa81e3427d55c2e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5937,6 +5937,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2788863131441146928, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788863131441146928, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: clipboardTasks
       value: 
       objectReference: {fileID: 719126818}
@@ -5971,7 +5975,7 @@ PrefabInstance:
     - target: {fileID: 8193496471502592254, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 895315205}
     - target: {fileID: 8193496471502592254, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -5982,7 +5986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8193496471502592254, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: CompleteStep
+      value: OnInteract
       objectReference: {fileID: 0}
     - target: {fileID: 8193496471502592254, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -5994,7 +5998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8193496471502592254, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: EHBOStapTestScript, Assembly-CSharp
+      value: BasisDetectieIphone, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8193496471502592254, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -6008,14 +6012,23 @@ PrefabInstance:
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8444229883432387815, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8759125421188981363, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8444229883432387815, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+    - {fileID: 2788863131441146928, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7345525065670645281, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 895315205}
     - targetCorrespondingSourceObject: {fileID: 213546429348063262, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1285511570}
@@ -7533,6 +7546,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610420051}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &610961228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7345525065670645281, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+  m_PrefabInstance: {fileID: 490062811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &614706265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10146,17 +10164,22 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 2685301262889385128, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
   m_PrefabInstance: {fileID: 490062811}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &895315195 stripped
+--- !u!114 &895315205
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2788863131441146928, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
-  m_PrefabInstance: {fileID: 490062811}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 610961228}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf9f61edbe01274daf8046b08dc8f4e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dd608d9ba62b14409e4deac2adc3e18, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::BasisDetectieIphone
+  clipboardTasks: {fileID: 719126818}
+  taskToComplete: bell 112 of maak handgebaar
+  objectsToDeActivateOnEnter: []
+  objectsToActivateOnExit: []
 --- !u!1001 &895931913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16696,14 +16719,14 @@ RectTransform:
   m_GameObject: {fileID: 1419379841}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9435584, y: 0.9435584, z: 0.9435584}
+  m_LocalScale: {x: 0.49758768, y: 0.49758768, z: 0.49758768}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1944682604}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0.7682, y: 0.3181}
+  m_AnchoredPosition: {x: 5.6, y: -0.4}
   m_SizeDelta: {x: 30.35, y: 31.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1419379843
@@ -16719,14 +16742,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.745283, g: 0.745283, b: 0.745283, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 190e8753a40cdf34b91c2e865403fcc1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 512b4eb05d76b554588c916f83c0293f, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -20938,7 +20961,7 @@ PrefabInstance:
     - target: {fileID: 2390029759025840998, guid: f744d96b06d4a3b43b62cc32fe624d26, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 895315195}
+      objectReference: {fileID: 0}
     - target: {fileID: 2390029759025840998, guid: f744d96b06d4a3b43b62cc32fe624d26, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -21126,7 +21149,7 @@ PrefabInstance:
     - target: {fileID: 7823394054097092611, guid: f744d96b06d4a3b43b62cc32fe624d26, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 895315195}
+      objectReference: {fileID: 0}
     - target: {fileID: 7823394054097092611, guid: f744d96b06d4a3b43b62cc32fe624d26, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
