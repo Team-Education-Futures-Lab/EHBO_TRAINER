@@ -1985,14 +1985,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118991988}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.184, y: -5.788, z: 8.951}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -2.09, y: -5.788, z: -4.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 144785002}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &126029228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7017,7 +7017,7 @@ RectTransform:
   m_GameObject: {fileID: 589902687}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.31701845, y: 0.31701845, z: 0.31701845}
+  m_LocalScale: {x: 0.46272013, y: 0.46272013, z: 0.46272013}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1452463496}
@@ -7040,14 +7040,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.68235296, g: 0.68235296, b: 0.68235296, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 20b182937e38f92468b6758b47ea1ac1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 38f18b9174f27a54fa81e3427d55c2e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -13976,7 +13976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9137e100b9016b24780559850eba1786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeManager
-  TimeInMinutes: 0
+  TimeInMinutes: 0.2
   WithText: 1
   Timer: {fileID: 458846943}
   timerSlider: {fileID: 1452463495}
@@ -15119,14 +15119,14 @@ RectTransform:
   m_GameObject: {fileID: 1280351338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9435584, y: 0.9435584, z: 0.9435584}
+  m_LocalScale: {x: 0.46818426, y: 0.46818426, z: 0.46818426}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1452463496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0.7682, y: 0.3181}
+  m_AnchoredPosition: {x: 5.6, y: -0.4}
   m_SizeDelta: {x: 30.35, y: 31.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1280351340
@@ -15142,14 +15142,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.68235296, g: 0.68235296, b: 0.68235296, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 190e8753a40cdf34b91c2e865403fcc1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 512b4eb05d76b554588c916f83c0293f, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
