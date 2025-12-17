@@ -5870,7 +5870,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 213546429348063262, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 489046541096738102, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: clipboardTasks
@@ -5879,6 +5879,10 @@ PrefabInstance:
     - target: {fileID: 489046541096738102, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: taskToComplete
       value: bell 112 of maak handgebaar
+      objectReference: {fileID: 0}
+    - target: {fileID: 929122088767030816, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1459289133681231701, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: m_LocalScale.x
@@ -5952,17 +5956,101 @@ PrefabInstance:
       propertyPath: completionCanvas
       value: 
       objectReference: {fileID: 1763896955}
+    - target: {fileID: 3147811332488443302, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3318211792947826659, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 3564993526728447795, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910800185902921118, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910800185902921118, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910800185902921118, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6177408980169930718, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6347879806322506780, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
       objectReference: {fileID: 0}
+    - target: {fileID: 6666267607653877604, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838418266686158668, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7060219468518550430, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7060219468518550431, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7060219468518550431, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7060219468518550431, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7060219468518550431, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7060219468518550431, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -180
+      objectReference: {fileID: 0}
     - target: {fileID: 7345525065670645281, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: m_Name
       value: phone1k (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7523115344110187678, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: _exitHoverNormal
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 7523115344110187678, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: _enterHoverNormal
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7523115344110187678, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: _exitHoverTangent
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7523115344110187678, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: _enterHoverTangent
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7523115344110187678, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: _cancelSelectNormal
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7523115344110187678, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: _cancelSelectTangent
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872644377895524582, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8193496471502592254, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
@@ -6545,6 +6633,10 @@ PrefabInstance:
     - target: {fileID: 2589893661405651569, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2772072231015141286, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
+      propertyPath: _interactableFilters.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4947156198446399453, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       propertyPath: _leftHand
@@ -10177,7 +10269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasisDetectieIphone
   clipboardTasks: {fileID: 719126818}
-  taskToComplete: bell 112 of maak handgebaar
+  taskToComplete: bell 112
   objectsToDeActivateOnEnter: []
   objectsToActivateOnExit: []
 --- !u!1001 &895931913
@@ -12215,7 +12307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: tasks.Array.data[1].taskName
-      value: bell 112 of maak handgebaar
+      value: bell 112
       objectReference: {fileID: 0}
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: tasks.Array.data[2].taskName
