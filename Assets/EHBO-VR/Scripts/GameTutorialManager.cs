@@ -8,7 +8,7 @@ public class GameTutorialManager : MonoBehaviour
     private int currentStep = 0;
     private int maxSteps = 2;
 
-    public RectTransform tutorialCanvas;
+    public RectTransform timerCanvas;
     public Vector3[] canvasPositions; // één positie per stap
 
     public TimeManager timeManager;
@@ -64,7 +64,7 @@ public class GameTutorialManager : MonoBehaviour
     private void UpdateTexts()
     {
         if (canvasPositions.Length > currentStep)
-            tutorialCanvas.localPosition = canvasPositions[currentStep];
+            timerCanvas.localPosition = canvasPositions[currentStep];
       
 
         switch (currentStep)
@@ -74,6 +74,7 @@ public class GameTutorialManager : MonoBehaviour
                 tutorialTexts[1].text = "Timer introductie";
                 tutorialTexts[2].text = "De timer geeft aan hoe lang je nog hebt om het slachtoffer te redden in de game.";
                 timeManager.ResetTimer(15f);
+                timerCanvas.gameObject.SetActive(true);
                 break;
 
             case 1:
@@ -81,6 +82,7 @@ public class GameTutorialManager : MonoBehaviour
                 tutorialTexts[1].text = "VR handen introductie";
                 tutorialTexts[2].text = "Tijdens het reanimeren zul je een aantal handelingen moeten uitvoeren. Deze handelingen zul je kunnen doen met je handen in VR.";
                 timeManager.ResetTimer(0f);
+                timerCanvas.gameObject.SetActive(false);
                 break;
 
             case 2:

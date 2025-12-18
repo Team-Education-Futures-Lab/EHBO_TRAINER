@@ -3024,7 +3024,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &244348172
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6479,7 +6479,7 @@ MonoBehaviour:
   - {fileID: 445187868}
   - {fileID: 94490729}
   - {fileID: 924252524}
-  tutorialCanvas: {fileID: 1929541606}
+  timerCanvas: {fileID: 1929541606}
   canvasPositions:
   - {x: 0.25, y: 0.82, z: 0.16}
   - {x: 2.26, y: 0.82, z: 0.16}
@@ -17815,7 +17815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3281755754987455352, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3281755754987455352, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
       propertyPath: m_TagString
