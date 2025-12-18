@@ -9,7 +9,7 @@ public class GameTutorialManager : MonoBehaviour
     private int maxSteps = 2;
 
     public RectTransform timerCanvas;
-    public Vector3[] canvasPositions; // één positie per stap
+
 
     public TimeManager timeManager;
 
@@ -63,8 +63,7 @@ public class GameTutorialManager : MonoBehaviour
 
     private void UpdateTexts()
     {
-        if (canvasPositions.Length > currentStep)
-            timerCanvas.localPosition = canvasPositions[currentStep];
+      
       
 
         switch (currentStep)

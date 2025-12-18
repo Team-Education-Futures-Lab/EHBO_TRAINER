@@ -6480,10 +6480,6 @@ MonoBehaviour:
   - {fileID: 94490729}
   - {fileID: 924252524}
   timerCanvas: {fileID: 1929541606}
-  canvasPositions:
-  - {x: 0.25, y: 0.82, z: 0.16}
-  - {x: 2.26, y: 0.82, z: 0.16}
-  - {x: 2.26, y: 0.82, z: 0.16}
   timeManager: {fileID: 1929541602}
 --- !u!4 &541885670
 Transform:
@@ -22512,7 +22508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 2.26, y: 0.82}
+  m_AnchoredPosition: {x: 0.381, y: 0.82}
   m_SizeDelta: {x: 3840, y: 2160}
   m_Pivot: {x: 0.49974617, y: 0.5}
 --- !u!4 &1930210176 stripped
