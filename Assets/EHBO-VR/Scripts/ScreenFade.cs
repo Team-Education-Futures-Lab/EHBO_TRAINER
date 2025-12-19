@@ -4,10 +4,11 @@ using System.Collections;
 
 public class ScreenFade : MonoBehaviour
 {
-    public Image fadeImage; // Fullscreen Image voor fade
-    public float fadeDuration = 2f; // Tijd in seconden voor fade
+    public Image fadeImage;           // Fullscreen Image voor fade
+    public float fadeDuration = 2f;   // Tijd in seconden voor fade
+    public Transform cameraRig;      // Empty object dat de VR camera bevat
+    public Transform targetPosition;  // Plaats waar je camera naartoe moet
 
-    
     public void StartScreenFade()
     {
         StartCoroutine(FadeInOut());
@@ -15,13 +16,22 @@ public class ScreenFade : MonoBehaviour
 
     IEnumerator FadeInOut()
     {
-                
-        yield return StartCoroutine(Fade(0f, 1f)); // Fade out (van transparant naar zwart)
-        
-        yield return new WaitForSeconds(1f);// Wacht eventueel even in volledig zichtbaar (optioneel)
+        // Fade out: transparant -> zwart
+        yield return StartCoroutine(Fade(0f, 1f));
 
-        yield return StartCoroutine(Fade(1f, 0f));// Fade in (van zwart naar transparant)
-       
+        // **Scherm is zwart, verplaats nu de camera root**
+        if (cameraRig != null && targetPosition != null)
+        {
+            cameraRig.position = targetPosition.position;
+            cameraRig.rotation = targetPosition.rotation;
+        }
+
+        // Optioneel: even wachten op zwart scherm
+        yield return new WaitForSeconds(0.5f);
+
+        // Fade in: zwart -> transparant
+        yield return StartCoroutine(Fade(1f, 0f));
+
         Debug.Log("Fade In and Out completed.");
     }
 
