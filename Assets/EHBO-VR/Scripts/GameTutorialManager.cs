@@ -12,20 +12,14 @@ public class GameTutorialManager : MonoBehaviour
 
     public TimeManager timeManager;
 
-    [Header("Feedback Settings")]
-    [SerializeField] private AudioClip completionSound;       // Geluid bij voltooien taak
-    [SerializeField] private Canvas completionCanvas;         // Canvas die kort getoond wordt
-    [SerializeField] private float canvasDisplayDuration = 2f;// Tijd dat canvas zichtbaar blijft
-    [SerializeField] private TMP_Text achievementText;
+    public Achievement achievementManager;
 
 
     void Start()
     {
         StartCoroutine(InitTutorial());
 
-        // Canvas standaard uitzetten
-        if (completionCanvas != null)
-            completionCanvas.gameObject.SetActive(false);
+        
     }
 
     private IEnumerator InitTutorial()
@@ -59,7 +53,8 @@ public class GameTutorialManager : MonoBehaviour
             UpdateTexts();
             Debug.Log("Next Step " + currentStep);
 
-            UnlockAchievement(completedStep);
+
+            achievementManager.UnlockAchievement(completedStep);
         }
 
     }
@@ -74,39 +69,6 @@ public class GameTutorialManager : MonoBehaviour
         }
     }
 
-    private void UnlockAchievement(int completedStep)
-    {
-        if (achievementText == null || completionCanvas == null)
-            return;
-
-        switch (completedStep)
-        {
-            case 1:
-                achievementText.text = "Achievement Unlocked!\nTimer onder controle";
-                break;
-
-            case 2:
-                achievementText.text = "Achievement Unlocked!\nVR Handen Meester";
-                break;
-
-            case 3:
-                achievementText.text = "Achievement Unlocked!\nHandgebaren Expert";
-                break;
-
-            default:
-                return; // Geen achievement voor andere stappen
-        }
-
-        StopAllCoroutines();
-        StartCoroutine(ShowCanvasTemporarily());
-    }
-
-    private IEnumerator ShowCanvasTemporarily()
-    {
-        completionCanvas.gameObject.SetActive(true);
-        yield return new WaitForSeconds(canvasDisplayDuration);
-        completionCanvas.gameObject.SetActive(false);
-    }
 
     private void UpdateTexts()
     {
