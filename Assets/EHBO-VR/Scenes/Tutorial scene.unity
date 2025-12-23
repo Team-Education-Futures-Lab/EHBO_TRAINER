@@ -6359,6 +6359,18 @@ PrefabInstance:
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
       objectReference: {fileID: 0}
+    - target: {fileID: 203962961223039923, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: _skeletonType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 474669588199917124, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: _skeletonType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 570078612460650710, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: _skeletonType
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 815209728225351868, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
@@ -6371,9 +6383,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2046828185305456295, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: _skeletonType
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3081719161591378170, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
       propertyPath: m_Name
       value: Victem
+      objectReference: {fileID: 0}
+    - target: {fileID: 3428666822123658230, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: _skeletonType
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3608774472530989956, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
       propertyPath: m_LocalScale.x
@@ -6431,6 +6451,34 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 6faa83d5f7edf4045aab78ae1ed50298, type: 2}
+    - target: {fileID: 4277693152893827720, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: _skeletonType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496033880239383912, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: _skeletonType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425325726211116161, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: _skeletonType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957480428359256868, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: _skeletonType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140897258263264136, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: _skeletonType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108824127522811588, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: _skeletonType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180214198420225619, guid: 111f18ac7601a43408a5db4bce030e3c, type: 3}
+      propertyPath: _skeletonType
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25297,6 +25345,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 2089268489}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
+  _forceKinematicDisabled: 0
 --- !u!54 &2089268489
 Rigidbody:
   m_ObjectHideFlags: 0
