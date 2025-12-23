@@ -6570,7 +6570,6 @@ GameObject:
   - component: {fileID: 541885670}
   - component: {fileID: 541885669}
   - component: {fileID: 541885671}
-  - component: {fileID: 541885672}
   m_Layer: 0
   m_Name: GameTutorial
   m_TagString: Untagged
@@ -6631,26 +6630,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Achievement
   achievementText: {fileID: 1533641788}
   animator: {fileID: 1480998110}
---- !u!114 &541885672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 541885668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aec0427256a1ffe48b6379696a1d42b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerTransitionToTutorial
-  isInTransition: 0
-  cameraRig: {fileID: 118991989}
-  targetPosition: {fileID: 254336499}
-  npcObject: {fileID: 1565568144}
-  scriptToActivate: {fileID: 1565568145}
-  animator: {fileID: 1565568146}
-  sceneFade: {fileID: 816257583}
-  fadeDuration: 1
 --- !u!4 &548760848 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4293850495013322, guid: 685803a48200879419cbf0f982932eb1, type: 3}
@@ -9297,17 +9276,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4673116164797152, guid: 5b97ca6353ad429419598d36d1a55e6d, type: 3}
   m_PrefabInstance: {fileID: 1172270855}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &816257583 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7027971615911425709, guid: f840924f4973637498249011783d01ca, type: 3}
-  m_PrefabInstance: {fileID: 813761782417241765}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7067690f38974b2478bd2f989e956c66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneFade
 --- !u!1001 &822830723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14014,7 +13982,7 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 541885672}
+      - m_Target: {fileID: 1565568150}
         m_TargetAssemblyTypeName: PlayerTransitionToTutorial, Assembly-CSharp
         m_MethodName: StartTransition
         m_Mode: 1
@@ -18509,6 +18477,9 @@ PrefabInstance:
       addedObject: {fileID: 1565568145}
     - targetCorrespondingSourceObject: {fileID: 3281755754987455352, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1565568150}
+    - targetCorrespondingSourceObject: {fileID: 3281755754987455352, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1565568151}
     - targetCorrespondingSourceObject: {fileID: 3281755754987455352, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
       insertIndex: -1
@@ -18550,12 +18521,29 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 1565568146}
   lookAtTarget: {fileID: 0}
-  playerTransitionScript: {fileID: 0}
+  playerTransitionScript: {fileID: 1565568150}
 --- !u!95 &1565568146 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4700641943394876169, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
   m_PrefabInstance: {fileID: 1565568142}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1565568150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565568144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec0427256a1ffe48b6379696a1d42b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerTransitionToTutorial
+  scriptToActivate: {fileID: 1565568145}
+  animator: {fileID: 1565568146}
+  isInTransition: 0
+  cameraRig: {fileID: 118991989}
+  targetPosition: {fileID: 254336499}
 --- !u!65 &1565568151
 BoxCollider:
   m_ObjectHideFlags: 0
