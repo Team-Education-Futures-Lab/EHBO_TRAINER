@@ -68,6 +68,8 @@ public class PlayerTransitionToTutorial : MonoBehaviour
         // Fade in
         if (sceneFade != null)
             yield return StartCoroutine(sceneFade.FadeInCoroutine(fadeDuration));
+
+        isInTransition = false;
     }
 
     void NPCTransition()
