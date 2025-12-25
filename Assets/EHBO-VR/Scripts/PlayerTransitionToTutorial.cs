@@ -1,61 +1,68 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class PlayerTransitionToTutorial : MonoBehaviour
 {
-   
     public bool isInTransition = false;
 
     [Header("VR Camera Rig")]
-    public Transform cameraRig;        // Bijv. OVR Camera Rig / XR Origin
-    public Transform targetPosition;   // Lege GameObject met gewenste positie/rotatie
+    public Transform cameraRig;
+
+    [Header("Target Positions")]
+    public Transform gameTutorialTarget;
+    public Transform vrTutorialTarget;
 
     [Header("NPC Object")]
     public GameObject npcObject;
-    public MonoBehaviour scriptToActivate; // script dat de NPC laat lopen
-    public Animator animator; // Animator van de NPC
+    public MonoBehaviour scriptToActivate;
+    public Animator animator;
 
     [Header("Fade")]
-    public SceneFade sceneFade; // Sleep hier je fade object in de Inspector
+    public SceneFade sceneFade;
     public float fadeDuration = 1f;
 
-
-    public void MoveCameraRig()
-    {
-        if (cameraRig == null || targetPosition == null)
-        {
-            Debug.LogWarning("CameraRig of TargetPosition is niet ingesteld.");
-            return;
-        }
-
-        cameraRig.position = targetPosition.position;
-        cameraRig.rotation = targetPosition.rotation;
-
-        Debug.Log("Camera rig verplaatst.");
-    }
     void Start()
     {
-        npcObject.SetActive(false);
+        if (npcObject != null)
+            npcObject.SetActive(false);
     }
 
-    public void StartTransition()
+    // 🔹 Deze koppel je aan de GAME tutorial knop
+    public void StartGameTutorial()
     {
-        StartCoroutine(TransitionRoutine());
+        if (isInTransition) return;
+        StartCoroutine(TransitionRoutine(gameTutorialTarget));
     }
 
-    IEnumerator TransitionRoutine()
+    // 🔹 Deze koppel je aan de VR tutorial knop
+    public void StartVRTutorial()
     {
+        if (isInTransition) return;
+        StartCoroutine(TransitionRoutine(vrTutorialTarget));
+    }
+
+    IEnumerator TransitionRoutine(Transform target)
+    {
+        if (cameraRig == null || target == null)
+        {
+            Debug.LogWarning("CameraRig of TargetPosition is niet ingesteld.");
+            yield break;
+        }
+
+        isInTransition = true;
+
         // Fade out
         if (sceneFade != null)
             yield return StartCoroutine(sceneFade.FadeOutCoroutine(fadeDuration));
 
-        // Verplaats de VR camera rig
-        MoveCameraRig();
+        // Camera verplaatsen
+        cameraRig.position = target.position;
+        cameraRig.rotation = target.rotation;
 
         // NPC transition
         NPCTransition();
 
-        // EventSystem reset zodat VR-knoppen weer werken
+        // EventSystem reset (belangrijk voor XR)
         UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(null);
 
         // Fade in
@@ -63,20 +70,15 @@ public class PlayerTransitionToTutorial : MonoBehaviour
             yield return StartCoroutine(sceneFade.FadeInCoroutine(fadeDuration));
     }
 
-
-
-    private void NPCTransition()
+    void NPCTransition()
     {
-    
-        // Script meteen activeren
         if (scriptToActivate != null)
             scriptToActivate.enabled = true;
 
-        // Optioneel: animatie direct starten
         if (animator != null)
-            animator.SetTrigger("Walk"); // alleen als je een trigger gebruikt
+            animator.SetTrigger("Walk");
 
-        isInTransition = true;
-        npcObject.SetActive(true);
+        if (npcObject != null)
+            npcObject.SetActive(true);
     }
 }
