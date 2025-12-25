@@ -60,7 +60,7 @@ public class PlayerTransitionToTutorial : MonoBehaviour
         cameraRig.rotation = target.rotation;
 
         // NPC transition
-        NPCTransition();
+        //NPCTransition();
 
         // EventSystem reset (belangrijk voor XR)
         UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(null);

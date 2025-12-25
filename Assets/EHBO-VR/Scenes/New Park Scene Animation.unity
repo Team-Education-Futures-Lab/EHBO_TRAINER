@@ -23225,7 +23225,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1786866677}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &1095939824
 Animator:
   serializedVersion: 7
@@ -23236,7 +23236,7 @@ Animator:
   m_GameObject: {fileID: 1095939822}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9863fc4ab4f5d1446b612e2745201130, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9b1250235a72d7c4ab0b51fde1808c5b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
