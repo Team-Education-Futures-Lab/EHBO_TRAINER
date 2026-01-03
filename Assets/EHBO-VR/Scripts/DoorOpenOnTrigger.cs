@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class DoorOpenOnNPC : MonoBehaviour
 {
-    public Animator doorAnimator; // Animator van de deur
+    public Animator doorAnimator;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("NPCPlayer") && doorAnimator != null)
         {
-            doorAnimator.enabled = true;
+            doorAnimator.SetTrigger("OpenDoor");
             Debug.Log("NPCPlayer trigger detected, opening door.");
         }
     }

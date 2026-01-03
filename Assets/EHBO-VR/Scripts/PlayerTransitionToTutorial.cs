@@ -13,10 +13,7 @@ public class PlayerTransitionToTutorial : MonoBehaviour
     public Transform gameTutorialTarget;
     public Transform vrTutorialTarget;
 
-    [Header("NPC Object")]
-    public GameObject npcObject;
-    public MonoBehaviour scriptToActivate;
-    public Animator animator;
+ 
 
     [Header("Fade")]
     public SceneFade sceneFade;
@@ -25,8 +22,7 @@ public class PlayerTransitionToTutorial : MonoBehaviour
 
     void Start()
     {
-        if (npcObject != null)
-            npcObject.SetActive(false);
+        
     }
 
     // 🔹 Deze koppel je aan de GAME tutorial knop
@@ -61,8 +57,7 @@ public class PlayerTransitionToTutorial : MonoBehaviour
         cameraRig.position = target.position;
         cameraRig.rotation = target.rotation;
 
-        // NPC transition
-        //NPCTransition();
+      
 
         // EventSystem reset (belangrijk voor XR)
         UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(null);
@@ -74,15 +69,5 @@ public class PlayerTransitionToTutorial : MonoBehaviour
         isInTransition = false;
     }
 
-    void NPCTransition()
-    {
-        if (scriptToActivate != null)
-            scriptToActivate.enabled = true;
-
-        if (animator != null)
-            animator.SetTrigger("Walk");
-
-        if (npcObject != null)
-            npcObject.SetActive(true);
-    }
+   
 }
