@@ -7454,6 +7454,7 @@ MonoBehaviour:
   achievementManager: {fileID: 541885671}
   videoPlayerHandGestures: {fileID: 2117210582}
   videoPlayerVRHands: {fileID: 1349718817}
+  toGameButton: {fileID: 1181266484}
 --- !u!4 &541885670
 Transform:
   m_ObjectHideFlags: 0
@@ -14847,6 +14848,11 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1181266484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5824888959264055625, guid: 4bf459842f45eb648a8e314fa01c55b6, type: 3}
+  m_PrefabInstance: {fileID: 1894365970}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1181953567 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4895497590064792, guid: 288b229db858c114299d1bf70ffc95cd, type: 3}

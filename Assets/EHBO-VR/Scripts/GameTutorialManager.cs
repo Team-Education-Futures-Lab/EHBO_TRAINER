@@ -19,12 +19,16 @@ public class GameTutorialManager : MonoBehaviour
     public GameObject videoPlayerHandGestures;
     public GameObject videoPlayerVRHands;
 
+    [Header("To the Game Button")]
+    public GameObject toGameButton;
+
     void Start()
     {
         StartCoroutine(InitTutorial());
 
         videoPlayerHandGestures.SetActive(false);
         videoPlayerVRHands.SetActive(false);
+        toGameButton.SetActive(false);
     }
 
     private IEnumerator InitTutorial()
@@ -112,12 +116,14 @@ public class GameTutorialManager : MonoBehaviour
                 tutorialTexts[2].text = "Je zult een aantal hand gestures moeten gebruiken tijdens het scenario.";
                 videoPlayerHandGestures.SetActive(true);
                 videoPlayerVRHands.SetActive(false);
+                toGameButton.SetActive(false);
                 break;
             case 4:
                 tutorialTexts[0].text = "";
                 tutorialTexts[1].text = "Tutorial voltooid!";
                 tutorialTexts[2].text = "je kunt nu door naar de game door te klikken op de knop";
                 videoPlayerHandGestures.SetActive(false);
+                toGameButton.SetActive(true);
                 break;
         }
     }
