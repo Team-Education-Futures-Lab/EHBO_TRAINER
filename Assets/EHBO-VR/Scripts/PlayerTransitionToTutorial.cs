@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+
 public class PlayerTransitionToTutorial : MonoBehaviour
 {
     public bool isInTransition = false;
@@ -20,6 +21,7 @@ public class PlayerTransitionToTutorial : MonoBehaviour
     [Header("Fade")]
     public SceneFade sceneFade;
     public float fadeDuration = 1f;
+
 
     void Start()
     {
