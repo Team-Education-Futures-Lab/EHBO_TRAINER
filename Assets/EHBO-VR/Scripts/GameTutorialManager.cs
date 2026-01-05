@@ -88,7 +88,7 @@ public class GameTutorialManager : MonoBehaviour
         {
             case 0:
                 tutorialTexts[0].text = "0/3";
-                tutorialTexts[1].text = "Welkom bij de EHBO VR training!";
+                tutorialTexts[1].text = "Welkom bij de EHBO VR tutorial!";
                 tutorialTexts[2].text = "In deze tutorial zullen we je basis functies uitleggen van de game.";
                 timeManager.ResetTimer(0f);
                 timerCanvas.gameObject.SetActive(false);
@@ -104,7 +104,7 @@ public class GameTutorialManager : MonoBehaviour
             case 2:
                 tutorialTexts[0].text = "2/3";
                 tutorialTexts[1].text = "VR handen introductie";
-                tutorialTexts[2].text = "Tijdens het reanimeren zul je een aantal handelingen moeten uitvoeren. Deze handelingen zul je kunnen doen met je handen in VR.";
+                tutorialTexts[2].text = "Tijdens het de game zul je een aantal handelingen moeten uitvoeren. Deze handelingen zul je kunnen doen met je handen in VR.";
                 timeManager.ResetTimer(0f);
                 timerCanvas.gameObject.SetActive(false);
                 videoPlayerHandGestures.SetActive(false);
@@ -113,7 +113,7 @@ public class GameTutorialManager : MonoBehaviour
             case 3:
                 tutorialTexts[0].text = "3/3";
                 tutorialTexts[1].text = "VR hand gebaren introductie";
-                tutorialTexts[2].text = "Je zult een aantal hand gestures moeten gebruiken tijdens het scenario.";
+                tutorialTexts[2].text = "Je zult een aantal hand gebaren moeten gebruiken tijdens het scenario.";
                 videoPlayerHandGestures.SetActive(true);
                 videoPlayerVRHands.SetActive(false);
                 toGameButton.SetActive(false);
@@ -121,7 +121,7 @@ public class GameTutorialManager : MonoBehaviour
             case 4:
                 tutorialTexts[0].text = "";
                 tutorialTexts[1].text = "Tutorial voltooid!";
-                tutorialTexts[2].text = "je kunt nu door naar de game door te klikken op de knop";
+                tutorialTexts[2].text = "je kunt nu door naar de game door te klikken op de rechter knop";
                 videoPlayerHandGestures.SetActive(false);
                 toGameButton.SetActive(true);
                 break;
