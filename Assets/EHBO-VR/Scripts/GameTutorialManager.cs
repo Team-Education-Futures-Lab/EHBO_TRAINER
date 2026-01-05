@@ -22,6 +22,10 @@ public class GameTutorialManager : MonoBehaviour
     [Header("To the Game Button")]
     public GameObject toGameButton;
 
+    [Header("Cube Grab Display")]
+    public GameObject CubeGrabDisplay;
+    public GameObject Cube;
+
     void Start()
     {
         StartCoroutine(InitTutorial());
@@ -29,6 +33,7 @@ public class GameTutorialManager : MonoBehaviour
         videoPlayerHandGestures.SetActive(false);
         videoPlayerVRHands.SetActive(false);
         toGameButton.SetActive(false);
+        CubeGrabDisplay.SetActive(false);
     }
 
     private IEnumerator InitTutorial()
@@ -100,6 +105,7 @@ public class GameTutorialManager : MonoBehaviour
                 timeManager.ResetTimer(15f);
                 timerCanvas.gameObject.SetActive(true);
                 videoPlayerVRHands.SetActive(false);
+                CubeGrabDisplay.SetActive(false);
                 break;
             case 2:
                 tutorialTexts[0].text = "2/3";
@@ -109,6 +115,8 @@ public class GameTutorialManager : MonoBehaviour
                 timerCanvas.gameObject.SetActive(false);
                 videoPlayerHandGestures.SetActive(false);
                 videoPlayerVRHands.SetActive(true);
+                CubeGrabDisplay.SetActive(true);
+                ResetCube();
                 break;
             case 3:
                 tutorialTexts[0].text = "3/3";
@@ -117,6 +125,7 @@ public class GameTutorialManager : MonoBehaviour
                 videoPlayerHandGestures.SetActive(true);
                 videoPlayerVRHands.SetActive(false);
                 toGameButton.SetActive(false);
+                CubeGrabDisplay.SetActive(false);
                 break;
             case 4:
                 tutorialTexts[0].text = "";
@@ -125,6 +134,19 @@ public class GameTutorialManager : MonoBehaviour
                 videoPlayerHandGestures.SetActive(false);
                 toGameButton.SetActive(true);
                 break;
+        }
+    }
+    private void ResetCube()
+    {
+        Cube.transform.localPosition = new Vector3(-0.0469999984f, 0.0860000029f, 0f);
+        Cube.transform.localRotation = Quaternion.identity;
+
+        // (optioneel maar belangrijk bij VR physics)
+        Rigidbody rb = Cube.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
         }
     }
 }
