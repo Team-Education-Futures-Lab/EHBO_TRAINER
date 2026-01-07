@@ -1,16 +1,21 @@
 using UnityEngine;
 
-public class CarEngineAuto : MonoBehaviour
+public class CarAudio : MonoBehaviour
 {
     public Animator animator;
     public AudioSource engineAudio;
 
     void Update()
     {
-        // Krijg info over de huidige animatie op layer 0
+        if (!animator.enabled) // check of animatie uit staat
+        {
+            if (engineAudio.isPlaying)
+                engineAudio.Stop();
+            return; // niks anders doen
+        }
+
         AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
 
-        // Als de animatie nog niet klaar is (normalizedTime < 1) of looped
         if (state.normalizedTime < 1f || state.loop)
         {
             if (!engineAudio.isPlaying)
@@ -22,4 +27,5 @@ public class CarEngineAuto : MonoBehaviour
                 engineAudio.Stop();
         }
     }
+
 }

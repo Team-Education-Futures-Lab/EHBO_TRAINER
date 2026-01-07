@@ -11,6 +11,9 @@ public class PlayerCollisionCar : MonoBehaviour
 
     public FirstPersonLocomotor locomotor;
 
+    // Voeg hier je crash-geluid toe in de Inspector
+    public AudioSource crashSound;
+
     private void Start()
     {
         hitText.enabled = false;
@@ -24,17 +27,27 @@ public class PlayerCollisionCar : MonoBehaviour
             gotHit = true;
             hitText.enabled = true;
 
+            // Crash-geluid van player afspelen
+            if (crashSound != null)
+                crashSound.Play();
+
+            // Audio op de auto stoppen
+            AudioSource carAudio = other.GetComponent<AudioSource>();
+            if (carAudio != null)
+                carAudio.Stop();
+
             locomotor.enabled = false;
 
+            // Auto animatie stoppen
             Animator carAnimator = other.GetComponent<Animator>();
             if (carAnimator != null)
-            {
                 carAnimator.enabled = false;
-            }
 
             StartCoroutine(RestartGameAfterDelay(4f));
         }
     }
+
+
     private IEnumerator RestartGameAfterDelay(float delay)
     {
         Debug.Log("Game wordt opnieuw gestart over " + delay + " seconden...");
