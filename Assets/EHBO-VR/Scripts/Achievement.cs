@@ -7,6 +7,7 @@ public class Achievement : MonoBehaviour
     [Header("Feedback Settings")]
     [SerializeField] private TMP_Text achievementText;
     [SerializeField] private Animator animator;
+    [SerializeField] private AudioSource achievementSound;
 
     // Houd bij welke achievements al getoond zijn
     private HashSet<int> unlockedAchievementsList = new HashSet<int>();
@@ -52,5 +53,8 @@ public class Achievement : MonoBehaviour
 
         // Speel de animatie vanaf het begin
         animator.Play("Achievement", 0, 0f);
+
+        if (achievementSound != null)
+            achievementSound.Play();
     }
 }
