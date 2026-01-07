@@ -756,6 +756,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 77840421}
     m_Modifications:
+    - target: {fileID: 190304556545935662, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
+    - target: {fileID: 2982406681485724748, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
+    - target: {fileID: 4270864659602505812, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
+    - target: {fileID: 5492443232830917706, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
     - target: {fileID: 7020475525692749241, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -808,6 +824,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7144985480850690813, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
     - target: {fileID: 7648921860294127363, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
       propertyPath: m_Name
       value: Car
@@ -816,6 +836,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 8108824480618200222, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
+    - target: {fileID: 8366967943632703912, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2626,7 +2654,7 @@ Transform:
   m_Children:
   - {fileID: 1955041535}
   - {fileID: 1955650684}
-  - {fileID: 321134562}
+  - {fileID: 768572740}
   - {fileID: 1606121811}
   - {fileID: 1320797635}
   - {fileID: 1681941117}
@@ -7603,11 +7631,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e711389017b7936479ed42454596049c, type: 3}
---- !u!4 &321134562 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7080858968819370759, guid: e711389017b7936479ed42454596049c, type: 3}
-  m_PrefabInstance: {fileID: 321134561}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &321304887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11086,7 +11109,6 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 535587797}
   lookAtTarget: {fileID: 0}
-  playerTransitionScript: {fileID: 0}
 --- !u!95 &535587797 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4700641943394876169, guid: 2a706093cdcc8d24f8b31d830f678399, type: 3}
@@ -11189,7 +11211,6 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 537737908}
   lookAtTarget: {fileID: 1630443797}
-  playerTransitionScript: {fileID: 0}
 --- !u!1001 &537838248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13470,7 +13491,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a9e352992243f2442b2e28472c47d42b, type: 2}
+  - {fileID: 2100000, guid: 06784df60f0463441b282ae3d845f149, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14463,6 +14484,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &768572740 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7080858968819370759, guid: e711389017b7936479ed42454596049c, type: 3}
+  m_PrefabInstance: {fileID: 321134561}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &782288699
 GameObject:
   m_ObjectHideFlags: 0
@@ -14754,7 +14780,6 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 796047357}
   lookAtTarget: {fileID: 0}
-  playerTransitionScript: {fileID: 0}
 --- !u!95 &796047357 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6552038334694914026, guid: be6cb4f0791ad3a4a80b41c3177f0aba, type: 3}
@@ -15321,7 +15346,6 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 808431209}
   lookAtTarget: {fileID: 0}
-  playerTransitionScript: {fileID: 0}
 --- !u!95 &808431209 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6552038334694914026, guid: be6cb4f0791ad3a4a80b41c3177f0aba, type: 3}
@@ -16069,7 +16093,6 @@ MonoBehaviour:
   loopPath: 1
   animator: {fileID: 825085404}
   lookAtTarget: {fileID: 0}
-  playerTransitionScript: {fileID: 0}
 --- !u!95 &825085404 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1259589323537842031, guid: 80e578b2d7250b542b1c305c12391f3e, type: 3}
@@ -26730,7 +26753,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a9e352992243f2442b2e28472c47d42b, type: 2}
+  - {fileID: 2100000, guid: 06784df60f0463441b282ae3d845f149, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28682,19 +28705,19 @@ PrefabInstance:
     - target: {fileID: 190304556545935662, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 41da208a03ef17c44a457f09783a1172, type: 2}
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
     - target: {fileID: 2982406681485724748, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 41da208a03ef17c44a457f09783a1172, type: 2}
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
     - target: {fileID: 4270864659602505812, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 41da208a03ef17c44a457f09783a1172, type: 2}
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
     - target: {fileID: 5492443232830917706, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 41da208a03ef17c44a457f09783a1172, type: 2}
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
     - target: {fileID: 7020475525692749241, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -28750,7 +28773,7 @@ PrefabInstance:
     - target: {fileID: 7144985480850690813, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 41da208a03ef17c44a457f09783a1172, type: 2}
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
     - target: {fileID: 7648921860294127363, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
       propertyPath: m_Name
       value: Car (1)
@@ -28762,11 +28785,11 @@ PrefabInstance:
     - target: {fileID: 8108824480618200222, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 41da208a03ef17c44a457f09783a1172, type: 2}
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
     - target: {fileID: 8366967943632703912, guid: 9f91421c9babd52489a537dbe4cf29b1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 41da208a03ef17c44a457f09783a1172, type: 2}
+      objectReference: {fileID: 2100000, guid: acf572a206812614eb58e5e7d487a1ba, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39674,7 +39697,6 @@ MonoBehaviour:
   loopPath: 0
   animator: {fileID: 1942304181}
   lookAtTarget: {fileID: 1630443797}
-  playerTransitionScript: {fileID: 0}
 --- !u!1001 &1947233034
 PrefabInstance:
   m_ObjectHideFlags: 0
