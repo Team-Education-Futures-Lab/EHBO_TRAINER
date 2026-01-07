@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-
 public class PlayerTransitionToTutorial : MonoBehaviour
 {
     public bool isInTransition = false;
@@ -13,16 +12,17 @@ public class PlayerTransitionToTutorial : MonoBehaviour
     public Transform gameTutorialTarget;
     public Transform vrTutorialTarget;
 
- 
-
     [Header("Fade")]
     public SceneFade sceneFade;
     public float fadeDuration = 1f;
 
+    [Header("Audio")]
+    public AudioSource transitionAudio; // ← audio voor tijdens transition
 
     void Start()
     {
-        
+        if (transitionAudio != null)
+            transitionAudio.loop = true; // zorg dat het blijft loopen
     }
 
     // 🔹 Deze koppel je aan de GAME tutorial knop
@@ -49,6 +49,10 @@ public class PlayerTransitionToTutorial : MonoBehaviour
 
         isInTransition = true;
 
+        // Start audio bij begin van transition
+        if (transitionAudio != null && !transitionAudio.isPlaying)
+            transitionAudio.Play();
+
         // Fade out
         if (sceneFade != null)
             yield return StartCoroutine(sceneFade.FadeOutCoroutine(fadeDuration));
@@ -57,8 +61,6 @@ public class PlayerTransitionToTutorial : MonoBehaviour
         cameraRig.position = target.position;
         cameraRig.rotation = target.rotation;
 
-      
-
         // EventSystem reset (belangrijk voor XR)
         UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(null);
 
@@ -66,8 +68,10 @@ public class PlayerTransitionToTutorial : MonoBehaviour
         if (sceneFade != null)
             yield return StartCoroutine(sceneFade.FadeInCoroutine(fadeDuration));
 
+        // Stop audio aan einde van transition
+        if (transitionAudio != null && transitionAudio.isPlaying)
+            transitionAudio.Stop();
+
         isInTransition = false;
     }
-
-   
 }
