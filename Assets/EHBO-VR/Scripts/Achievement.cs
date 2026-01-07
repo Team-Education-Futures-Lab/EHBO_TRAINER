@@ -26,14 +26,26 @@ public class Achievement : MonoBehaviour
         switch (completedStep)
         {
             case 1:
-                achievementText.text = "Achievement Unlocked!\nTimer onder controle";
+                achievementText.text =
+                "<size=130%><b>De tijd tikt</b></size>\n" +
+                "<size=90%>Prestatie behaald</size>\n" +
+                "Timer onder controle";
                 break;
+
             case 2:
-                achievementText.text = "Achievement Unlocked!\nVR Handen Meester";
+                achievementText.text =
+                "<size=130%><b>Aan de slag</b></size>\n" +
+                "<size=90%>Prestatie behaald</size>\n" +
+                "VR-handen onder controle";
                 break;
+
             case 3:
-                achievementText.text = "Achievement Unlocked!\nHandgebaren Expert";
+                achievementText.text =
+                "<size=130%><b>EHBO in de praktijk</b></size>\n" +
+                "<size=90%>Prestatie behaald</size>\n" +
+                "Handgebaren onder controle";
                 break;
+
             default:
                 return;
         }
