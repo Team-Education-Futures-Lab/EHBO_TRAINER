@@ -95,7 +95,7 @@ public class GameTutorialManager : MonoBehaviour
             case 0:
                 tutorialTexts[0].text = "0/3";
                 tutorialTexts[1].text = "Welkom bij de EHBO VR tutorial!";
-                tutorialTexts[2].text = "3 basis functies worden uitgelegd.";
+                tutorialTexts[2].text = "In deze tutorial worden 3 basis functies uitgelegd.";
                 timeManager.ResetTimer(0f);
                 timerCanvas.gameObject.SetActive(false);
                 break;
@@ -124,7 +124,7 @@ public class GameTutorialManager : MonoBehaviour
             case 3:
                 tutorialTexts[0].text = "3/3";
                 tutorialTexts[1].text = "VR hand gebaren introductie";
-                tutorialTexts[2].text = "Je zult een aantal hand gebaren moeten gebruiken.";
+                tutorialTexts[2].text = "Je zult een aantal hand gebaren moeten uitvoeren.";
                 videoPlayerHandGestures.SetActive(true);
                 videoPlayerVRHands.SetActive(false);
                 toGameButton.SetActive(false);
