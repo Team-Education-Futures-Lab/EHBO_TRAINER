@@ -27,6 +27,11 @@ public class GameTutorialManager : MonoBehaviour
     public GameObject CubeGrabDisplay;
     public GameObject Cube;
 
+    [Header("Voice-over per step")]
+    [SerializeField] private AudioClip[] VoiceOvers; // 0 = stap 0, 1 = stap 1, etc.
+    [SerializeField] private VoiceOver voiceOverManager; // verwijzing naar je bestaande VoiceOver manager
+    [SerializeField] private float voiceOverDelay = 2f;   // optioneel: delay voordat voice over begint
+
     void Start()
     {
         StartCoroutine(InitTutorial());
@@ -101,8 +106,8 @@ public class GameTutorialManager : MonoBehaviour
                 break;
             case 1:
                 tutorialTexts[0].text = "1/3";
-                tutorialTexts[1].text = "Timer introductie";
-                tutorialTexts[2].text = "De timer geeft aan hoe lang je nog hebt om het slachtoffer te redden.";
+                tutorialTexts[1].text = "Tijdsbalk introductie";
+                tutorialTexts[2].text = "De tijdsbalk geeft aan hoe lang je nog hebt om het slachtoffer te redden.";
                 timeManager.ResetTimer(15f);
                 timerCanvas.gameObject.SetActive(true);
                 videoPlayerVRHands.SetActive(false);
@@ -138,7 +143,33 @@ public class GameTutorialManager : MonoBehaviour
                 toGameButton.SetActive(true);
                 break;
         }
+
+        PlayStepVoiceOver();
     }
+    private void PlayStepVoiceOver()
+    {
+        if (voiceOverManager == null || VoiceOvers == null)
+            return;
+
+        int index = Mathf.Clamp(currentStep, 0, VoiceOvers.Length - 1); // safe check
+        AudioClip clipToPlay = VoiceOvers[index];
+
+        if (clipToPlay != null)
+        {
+            // Stop eventueel huidige voice-over
+            voiceOverManager.StopVoiceOver();
+
+            // Start de nieuwe met delay
+            StartCoroutine(PlayVoiceOverWithDelay(clipToPlay, voiceOverDelay));
+        }
+    }
+
+    private IEnumerator PlayVoiceOverWithDelay(AudioClip clip, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        voiceOverManager.PlayVoiceOver(clip);
+    }
+
     private void ResetCube()
     {
         Cube.transform.localPosition = new Vector3(-0.0469999984f, 0.0860000029f, 0f);

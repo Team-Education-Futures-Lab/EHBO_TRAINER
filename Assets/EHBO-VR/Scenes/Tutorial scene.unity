@@ -7400,6 +7400,14 @@ MonoBehaviour:
   toGameButton: {fileID: 1181266484}
   CubeGrabDisplay: {fileID: 172586189}
   Cube: {fileID: 2137806392}
+  VoiceOvers:
+  - {fileID: 8300000, guid: 75711d2258ff91b47ada06514eb01139, type: 3}
+  - {fileID: 8300000, guid: 1ac1007740e591e44ad0afc97dd3af5d, type: 3}
+  - {fileID: 8300000, guid: 34936e9789a482d4dac8578812a45b4e, type: 3}
+  - {fileID: 8300000, guid: 6d3424546a06eeb46934295e3a71b2d6, type: 3}
+  - {fileID: 8300000, guid: 0799fe35fa816e94ba36858402a7ba2f, type: 3}
+  voiceOverManager: {fileID: 95257611}
+  voiceOverDelay: 2
 --- !u!4 &541885670
 Transform:
   m_ObjectHideFlags: 0
@@ -24779,6 +24787,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 95257611}
+        m_TargetAssemblyTypeName: VoiceOver, Assembly-CSharp
+        m_MethodName: StopVoiceOver
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
