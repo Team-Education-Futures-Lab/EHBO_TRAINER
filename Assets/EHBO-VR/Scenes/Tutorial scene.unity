@@ -908,6 +908,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 95257611}
+        m_TargetAssemblyTypeName: VoiceOver, Assembly-CSharp
+        m_MethodName: StopVoiceOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
@@ -14134,7 +14146,7 @@ PrefabInstance:
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: tasks.Array.data[2].voiceOver
       value: 
-      objectReference: {fileID: 8300000, guid: d4d1b5a15e0108c40bd8bf72a911103e, type: 3}
+      objectReference: {fileID: 8300000, guid: 2b0a73e6ebb0bf64fbb099e6cc77280d, type: 3}
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: tasks.Array.data[3].taskImage
       value: 
@@ -14142,7 +14154,7 @@ PrefabInstance:
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: tasks.Array.data[3].voiceOver
       value: 
-      objectReference: {fileID: 8300000, guid: cd751c44556e4bc47b6956fcc96f3376, type: 3}
+      objectReference: {fileID: 8300000, guid: ccd11805cdbeb3642b0dafb732266e7a, type: 3}
     - target: {fileID: 8660165561375637775, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -15926,6 +15938,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1763122688}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 95257611}
+        m_TargetAssemblyTypeName: VoiceOver, Assembly-CSharp
+        m_MethodName: StopVoiceOver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
