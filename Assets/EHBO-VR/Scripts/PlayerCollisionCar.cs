@@ -27,26 +27,21 @@ public class PlayerCollisionCar : MonoBehaviour
             gotHit = true;
             hitText.enabled = true;
 
-            // Crash-geluid van player afspelen
+            // Crash-geluid afspelen
             if (crashSound != null)
                 crashSound.Play();
 
-            // Audio op de auto stoppen
-            AudioSource carAudio = other.GetComponent<AudioSource>();
-            if (carAudio != null)
-                carAudio.Stop();
-
             locomotor.enabled = false;
 
-            // Auto animatie stoppen
             Animator carAnimator = other.GetComponent<Animator>();
             if (carAnimator != null)
+            {
                 carAnimator.enabled = false;
+            }
 
             StartCoroutine(RestartGameAfterDelay(4f));
         }
     }
-
 
     private IEnumerator RestartGameAfterDelay(float delay)
     {
