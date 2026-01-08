@@ -54,7 +54,7 @@ public class clipboard : MonoBehaviour
     {
         // Speel de voice over van de eerste taak
 
-        StartCoroutine(PlayVoiceOverWithDelay(tasks[0].voiceOver, 3f));
+        StartCoroutine(PlayVoiceOverWithDelay(tasks[0].voiceOver, 4f));
     }
 
 
@@ -88,6 +88,14 @@ public class clipboard : MonoBehaviour
     {
         Task currentTask = tasks[currentTaskIndex];
 
+        // Haal VoiceOver component één keer op
+        VoiceOver vo = voiceOverManager.GetComponent<VoiceOver>();
+        if (vo != null)
+        {
+            // Stop huidige voice-over
+            vo.StopVoiceOver();
+        }
+
         // Update afbeelding naar completed texture
         if (currentTask.completedTexture != null)
             currentTask.taskImage.texture = currentTask.completedTexture;
@@ -102,17 +110,18 @@ public class clipboard : MonoBehaviour
             Task nextTask = tasks[currentTaskIndex];
             nextTask.taskText.text = nextTask.taskName;
 
-            // Speel de voice-over van de volgende taak via je VoiceOver manager
-            VoiceOver vo = voiceOverManager.GetComponent<VoiceOver>();
-            
-            // Voor de volgende taak
-            StartCoroutine(PlayVoiceOverWithDelay(nextTask.voiceOver, 2f));
+            // Speel de voice-over van de volgende taak met delay
+            if (vo != null)
+            {
+                StartCoroutine(PlayVoiceOverWithDelay(nextTask.voiceOver, 2f));
+            }
         }
         else
         {
             Debug.Log("All tasks completed!");
         }
     }
+
 
 
 
