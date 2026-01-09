@@ -113,14 +113,14 @@ public class GameTutorialManager : MonoBehaviour
             case 0:
                 tutorialTexts[0].text = "0/3";
                 tutorialTexts[1].text = "Welkom bij de EHBO VR tutorial!";
-                tutorialTexts[2].text = "In deze tutorial worden 3 basis functies uitgelegd.";
+                tutorialTexts[2].text = "In deze tutorial worden 3 basis functies uitgelegd.\n- De tijdsbalk\n- VR handen\n- Hand gebaren";
                 timeManager.ResetTimer(0f);
                 timerCanvas.gameObject.SetActive(false);
                 break;
             case 1:
                 tutorialTexts[0].text = "1/3";
                 tutorialTexts[1].text = "Tijdsbalk introductie";
-                tutorialTexts[2].text = "De tijdsbalk geeft aan hoe lang je nog hebt om het slachtoffer te redden.";
+                tutorialTexts[2].text = "De tijdsbalk geeft aan hoe lang je nog hebt om het slachtoffer te redden.\n\nBij een reanimatie is dit bijvoorbeeld 4 minuten.";
                 timeManager.ResetTimer(23f);
                 timerCanvas.gameObject.SetActive(true);
                 videoPlayerVRHands.SetActive(false);
@@ -129,7 +129,7 @@ public class GameTutorialManager : MonoBehaviour
             case 2:
                 tutorialTexts[0].text = "2/3";
                 tutorialTexts[1].text = "VR handen introductie";
-                tutorialTexts[2].text = "Tijdens de game moet je een aantal handelingen uitvoeren.\n\n" + "Deze voer je uit met je VR-handen.";
+                tutorialTexts[2].text = "Tijdens de game moet je een aantal handelingen uitvoeren.\n\nDeze voer je uit met je VR-handen.";
 
 
                 timeManager.ResetTimer(0f);
@@ -142,7 +142,7 @@ public class GameTutorialManager : MonoBehaviour
             case 3:
                 tutorialTexts[0].text = "3/3";
                 tutorialTexts[1].text = "VR hand gebaren introductie";
-                tutorialTexts[2].text = "Je zult een aantal hand gebaren moeten uitvoeren.";
+                tutorialTexts[2].text = "Je zult een aantal hand gebaren moeten uitvoeren.\n\nHier op het bord zie je op welke manier je dit gaat kunnen doen.";
                 videoPlayerHandGestures.SetActive(true);
                 videoPlayerVRHands.SetActive(false);
                 toGameButton.SetActive(false);
