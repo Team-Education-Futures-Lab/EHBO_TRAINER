@@ -32,15 +32,28 @@ public class GameTutorialManager : MonoBehaviour
     [SerializeField] private VoiceOver voiceOverManager; // verwijzing naar je bestaande VoiceOver manager
     [SerializeField] private float voiceOverDelay = 2f;   // optioneel: delay voordat voice over begint
 
+    private bool tutorialStarted = false;
+
+
     void Start()
-    {
-        StartCoroutine(InitTutorial());
+    {  
 
         videoPlayerHandGestures.SetActive(false);
         videoPlayerVRHands.SetActive(false);
         toGameButton.SetActive(false);
         CubeGrabDisplay.SetActive(false);
     }
+    public void StartGameTutorial()
+    {
+        if (tutorialStarted)
+            return;
+
+        tutorialStarted = true;
+        currentStep = 0;
+
+        StartCoroutine(InitTutorial());
+    }
+
 
     private IEnumerator InitTutorial()
     {
@@ -108,7 +121,7 @@ public class GameTutorialManager : MonoBehaviour
                 tutorialTexts[0].text = "1/3";
                 tutorialTexts[1].text = "Tijdsbalk introductie";
                 tutorialTexts[2].text = "De tijdsbalk geeft aan hoe lang je nog hebt om het slachtoffer te redden.";
-                timeManager.ResetTimer(15f);
+                timeManager.ResetTimer(23f);
                 timerCanvas.gameObject.SetActive(true);
                 videoPlayerVRHands.SetActive(false);
                 CubeGrabDisplay.SetActive(false);
@@ -144,9 +157,12 @@ public class GameTutorialManager : MonoBehaviour
                 break;
         }
 
-        PlayStepVoiceOver();
+        if (tutorialStarted)
+        {
+            PlayGameTutorialVoiceOver();
+        }
     }
-    private void PlayStepVoiceOver()
+    public void PlayGameTutorialVoiceOver()
     {
         if (voiceOverManager == null || VoiceOvers == null)
             return;

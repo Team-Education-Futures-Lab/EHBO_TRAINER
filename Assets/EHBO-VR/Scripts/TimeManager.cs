@@ -13,21 +13,7 @@ public class TimeManager : MonoBehaviour
     private float TimeInSeconds;
     private bool stopTimer;
 
-    void Start()
-    {
-        TimeInSeconds = TimeInMinutes * 60f;
-        stopTimer = false;
-
-        timerSlider.maxValue = TimeInSeconds;
-        timerSlider.value = TimeInSeconds;
-
-        if (WithText)
-            Timer.gameObject.SetActive(true);
-        else
-            Timer.gameObject.SetActive(false);
-
-        Timer.text = $"{TimeInMinutes:0}:00";
-    }
+    public AudioSource TickingSound;
 
     void Update()
     {
@@ -40,6 +26,12 @@ public class TimeManager : MonoBehaviour
         {
             TimeInSeconds = 0;
             stopTimer = true;
+            TickingSound.Stop();
+        }
+        else
+        {
+            if (!TickingSound.isPlaying)
+                TickingSound.Play();
         }
 
         int minutes = Mathf.FloorToInt(TimeInSeconds / 60);
