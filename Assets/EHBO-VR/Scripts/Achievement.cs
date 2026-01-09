@@ -30,7 +30,7 @@ public class Achievement : MonoBehaviour
                 achievementText.text =
                 "<size=130%><b>De tijd tikt</b></size>\n" +
                 "<size=90%>Prestatie behaald</size>\n" +
-                "Timer onder controle";
+                "TIjdsbalk onder controle";
                 break;
 
             case 2:
