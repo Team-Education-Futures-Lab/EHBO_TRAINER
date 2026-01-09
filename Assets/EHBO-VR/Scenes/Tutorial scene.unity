@@ -7701,6 +7701,10 @@ PrefabInstance:
       propertyPath: requestScenePermissionOnStartup
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6465019692704471151, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6465019692711123531, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -7763,6 +7767,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8602449323454011973, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076588544260581140, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -16000,6 +16008,18 @@ MonoBehaviour:
       - m_Target: {fileID: 95257611}
         m_TargetAssemblyTypeName: VoiceOver, Assembly-CSharp
         m_MethodName: StopVoiceOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 541885669}
+        m_TargetAssemblyTypeName: GameTutorialManager, Assembly-CSharp
+        m_MethodName: StartGameTutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
