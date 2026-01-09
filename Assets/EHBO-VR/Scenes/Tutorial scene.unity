@@ -7669,6 +7669,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2116945030526000592, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116945030526000592, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116945030526000592, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2589893661405651569, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -7692,6 +7704,10 @@ PrefabInstance:
     - target: {fileID: 6465019692711123531, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465019692711151213, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
       objectReference: {fileID: 0}
     - target: {fileID: 8602449323454011972, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       propertyPath: m_Name
