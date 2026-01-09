@@ -7040,7 +7040,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Park Preview
+  m_text: Park preview
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb44739c484b1b54bbc1a0d4d9dd1a50, type: 2}
   m_sharedMaterial: {fileID: -5839354330806206608, guid: eb44739c484b1b54bbc1a0d4d9dd1a50, type: 2}
@@ -16786,7 +16786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 839469724774365469, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_text
-      value: start de volgende tutorial
+      value: Start de volgende tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 839469724774365469, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
@@ -16906,7 +16906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4409606731807013286, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_text
-      value: druk deze knop pas in wanneer het klembord dat zegt
+      value: Druk deze knop pas in wanneer het klembord dat zegt
       objectReference: {fileID: 0}
     - target: {fileID: 4409606731807013286, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
@@ -16914,7 +16914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4409606731986116219, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_text
-      value: kan tijdens de oefening gebruikt worden om 112 te bellen
+      value: Kan tijdens de oefening gebruikt worden om 112 te bellen
       objectReference: {fileID: 0}
     - target: {fileID: 4409606731986116219, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
@@ -16958,7 +16958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5144985525317724722, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_text
-      value: is vastpakbaar en geeft instructies
+      value: Is vastpakbaar en geeft instructies
       objectReference: {fileID: 0}
     - target: {fileID: 5144985525317724722, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
@@ -17146,7 +17146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210868760841497225, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: m_text
-      value: klembord
+      value: Klembord
       objectReference: {fileID: 0}
     - target: {fileID: 8210868760841497225, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
