@@ -2974,6 +2974,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 207385811}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
+  _forceKinematicDisabled: 0
 --- !u!1001 &207974378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39439,7 +39440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8602449323454011973, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 107.62
+      value: 104.8
       objectReference: {fileID: 0}
     - target: {fileID: 8602449323454011973, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -39447,7 +39448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8602449323454011973, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 92.252
+      value: 89.93
       objectReference: {fileID: 0}
     - target: {fileID: 8602449323454011973, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       propertyPath: m_LocalRotation.w
