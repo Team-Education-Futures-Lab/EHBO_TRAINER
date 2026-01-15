@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DoorOpenOnNPC : MonoBehaviour
+public class DoorOpenOnTrigger : MonoBehaviour
 {
     public Animator doorAnimator;
     public AudioSource doorSound; // voeg hier het geluid toe via Inspector
