@@ -8,7 +8,8 @@ public class TaskTrigger : MonoBehaviour
     private Material originalMaterial; // To store the original material
     private BoxCollider boxCollider; // BoxCollider to modify
 
-    [SerializeField] public bool isGrabbing = false; // Determines if the cube can turn green
+    [SerializeField]
+    private bool isGrabbing = false; // Determines if the cube can turn green
 
     // Set initial conditions
     void Start()

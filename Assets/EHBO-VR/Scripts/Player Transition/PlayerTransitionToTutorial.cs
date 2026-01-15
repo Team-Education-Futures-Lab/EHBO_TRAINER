@@ -3,21 +3,28 @@ using UnityEngine;
 
 public class PlayerTransitionToTutorial : MonoBehaviour
 {
-    public bool isInTransition = false;
+    [SerializeField]
+    private bool isInTransition = false;
 
     [Header("VR Camera Rig")]
-    public Transform cameraRig;
+    [SerializeField]
+    private Transform cameraRig;
 
     [Header("Target Positions")]
-    public Transform gameTutorialTarget;
-    public Transform vrTutorialTarget;
+    [SerializeField]
+    private Transform gameTutorialTarget;
+    [SerializeField]
+    private Transform vrTutorialTarget;
 
     [Header("Fade")]
-    public SceneFade sceneFade;
-    public float fadeDuration = 1f;
+    [SerializeField]
+    private SceneFade sceneFade;
+    [SerializeField]
+    private float fadeDuration = 1f;
 
     [Header("Audio")]
-    public AudioSource transitionAudio; // ← audio voor tijdens transition
+    [SerializeField]
+    private AudioSource transitionAudio; // Audio source used during the transition
 
     void Start()
     {

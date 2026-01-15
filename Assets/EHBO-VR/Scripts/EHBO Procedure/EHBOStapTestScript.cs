@@ -5,15 +5,16 @@ using UnityEngine;
 public class EHBOStapTestScript : MonoBehaviour
 {
     // Reference to the main ExerciseTracker script
-    public EHBOStappenChecker StappenTracker;
+    [SerializeField]
+    private EHBOStappenChecker StappenTracker;
 
     // Customizable step name and required duration, assignable in the Inspector
     [SerializeField] private string stepName = "Default Step";
     [SerializeField] private float requiredDuration = 2.0f; // Duration in seconds
 
     // Internal timer to track how long the action is performed
-    private float actionTimer = 0.0f;
-    private bool isPerformingAction = false;
+    private float elapsedActionTime = 0.0f;
+    private bool isCountingActionTime = false;
 
     // Method to start counting when the action begins
 
@@ -28,7 +29,7 @@ public class EHBOStapTestScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))  
         {
-            isPerformingAction = true;  // Start counting
+            isCountingActionTime = true;  // Start counting
         }
     }
 
@@ -37,23 +38,23 @@ public class EHBOStapTestScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            isPerformingAction = false;
-            actionTimer = 0.0f;  // Reset timer if the action stops
+            isCountingActionTime = false;
+            elapsedActionTime = 0.0f;  // Reset timer if the action stops
         }
     }
 
     void Update()
     {
         // Only count time if the action is being performed
-        if (isPerformingAction)
+        if (isCountingActionTime)
         {
-            actionTimer += Time.deltaTime;
+            elapsedActionTime += Time.deltaTime;
 
             // Check if the required duration is reached
-            if (actionTimer >= requiredDuration)
+            if (elapsedActionTime >= requiredDuration)
             {
                 CompleteStep();
-                isPerformingAction = false;  // Stop counting after completion
+                isCountingActionTime = false;  // Stop counting after completion
             }
         }
     }

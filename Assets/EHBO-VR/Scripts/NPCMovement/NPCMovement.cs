@@ -6,16 +6,24 @@ public class NPCMovement : MonoBehaviour
     public enum MoveState { Idle, Walk, Run }
 
     [Header("Movement Settings")]
-    public Transform[] waypoints;
-    public MoveState currentState = MoveState.Walk;
-    public float walkSpeed = 3f;
-    public float runSpeed = 6f;
-    public float waitTime = 0f;
-    public bool loopPath = false;
+    [SerializeField]
+    private Transform[] waypoints;
+    [SerializeField]
+    private MoveState currentState = MoveState.Walk;
+    [SerializeField]
+    private float walkSpeed = 3f;
+    [SerializeField]
+    private float runSpeed = 6f;
+    [SerializeField]
+    private float waitTime = 0f;
+    [SerializeField]
+    private bool loopPath = false;
 
     [Header("References")]
-    public Animator animator;
-    public Transform lookAtTarget;
+    [SerializeField]
+    private Animator animator;
+    [SerializeField]
+    private Transform lookAtTarget;
 
     private int currentWaypoint = 0;
     private bool isWaiting = false;

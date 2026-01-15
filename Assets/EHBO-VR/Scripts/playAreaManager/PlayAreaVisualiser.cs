@@ -6,14 +6,19 @@ using Oculus.Platform.Models;
 
 public class PlayAreaVisualiser : MonoBehaviour
 {
-    public GameObject cornerMarkerPrefab;
-    public Transform objectToMove; // Reference to the object to move
+    [SerializeField]
+    private GameObject cornerMarkerPrefab;
+    [SerializeField]
+    private Transform objectToMove; // Reference to the object to move
     private OVRBoundary ovrBoundary;
-    public OVRCameraRig cameraRig;
+    [SerializeField]
+    private OVRCameraRig cameraRig;
 
     private Vector3[] boundaryPointsWorld;
-    public float edgeBufferDistance = 1.0f; // Adjustable buffer distance from the edges
-    public float cameraBufferDistance = 1.0f; // Adjustable buffer distance from the camera rig
+    [SerializeField]
+    private float edgeBufferDistance = 1.0f; // Adjustable buffer distance from the edges
+    [SerializeField]
+    private float cameraBufferDistance = 1.0f; // Adjustable buffer distance from the camera rig
 
     void Start()
     {

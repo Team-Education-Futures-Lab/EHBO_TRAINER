@@ -24,9 +24,9 @@ public class clipboard : MonoBehaviour
     private int currentTaskIndex = 0;
 
     [Header("Feedback Settings")]
-    [SerializeField] private AudioClip completionSound;       // Geluid bij voltooien taak
-    [SerializeField] private Canvas completionCanvas;         // Canvas die kort getoond wordt
-    [SerializeField] private float canvasDisplayDuration = 2f;// Tijd dat canvas zichtbaar blijft
+    [SerializeField] private AudioClip completionSound;       // Sound played when a task is completed
+    [SerializeField] private Canvas completionCanvas;         // Canvas that briefly shows completion feedback
+    [SerializeField] private float canvasDisplayDuration = 2f;// Duration that the completion canvas stays visible
 
     [Header("Voice-over Settings")]
     [SerializeField] private GameObject voiceOverManager;
@@ -39,12 +39,12 @@ public class clipboard : MonoBehaviour
     {
         InitializeTasks();
 
-        // Zorg dat er een AudioSource op dit object zit
+        // Ensure there is an AudioSource on this GameObject
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
             audioSource = gameObject.AddComponent<AudioSource>();
 
-        // Canvas standaard uitzetten
+        // Disable the completion canvas by default
         if (completionCanvas != null)
             completionCanvas.gameObject.SetActive(false);
         
@@ -52,13 +52,12 @@ public class clipboard : MonoBehaviour
 
     public void StartVRTutorialVoiceOver()
     {
-        // Speel de voice over van de eerste taak
-
+        // Play the voice-over for the first task
         StartCoroutine(PlayVoiceOverWithDelay(tasks[0].voiceOver, 4f));
     }
 
 
-    // Initialiseer alle taken (enkel de eerste zichtbaar)
+    // Initialize every task (only the first one is revealed immediately)
     private void InitializeTasks()
     {
         for (int i = 0; i < tasks.Count; i++)
@@ -70,7 +69,7 @@ public class clipboard : MonoBehaviour
         }
     }
 
-    // Wordt aangeroepen door andere scripts om een taak als voltooid te registreren
+    // Called by other scripts to register that a task is complete
     public void RegisterTaskCompletion(string taskName)
     {
         if (currentTaskIndex < tasks.Count && tasks[currentTaskIndex].taskName == taskName)
@@ -83,35 +82,35 @@ public class clipboard : MonoBehaviour
         }
     }
 
-    // Voltooit de huidige taak, geeft feedback en onthult de volgende
+    // Completes the current task, provides feedback, and reveals the next one
     private void CompleteCurrentTask()
     {
         Task currentTask = tasks[currentTaskIndex];
 
-        // Haal VoiceOver component één keer op
-        VoiceOver vo = voiceOverManager.GetComponent<VoiceOver>();
-        if (vo != null)
+        // Retrieve the VoiceOver component once
+        VoiceOver voiceOverComponent = voiceOverManager.GetComponent<VoiceOver>();
+        if (voiceOverComponent != null)
         {
-            // Stop huidige voice-over
-            vo.StopVoiceOver();
+            // Stop the currently playing voice-over
+            voiceOverComponent.StopVoiceOver();
         }
 
-        // Update afbeelding naar completed texture
+        // Update the task image to show the completed texture
         if (currentTask.completedTexture != null)
             currentTask.taskImage.texture = currentTask.completedTexture;
 
-        // Geef feedback aan speler
+        // Provide feedback to the player
         PlayCompletionFeedback();
 
-        // Ga door naar de volgende taak (indien beschikbaar)
+        // Reveal the next task (if available)
         currentTaskIndex++;
         if (currentTaskIndex < tasks.Count)
         {
             Task nextTask = tasks[currentTaskIndex];
             nextTask.taskText.text = nextTask.taskName;
 
-            // Speel de voice-over van de volgende taak met delay
-            if (vo != null)
+            // Play the next task voice-over with a short delay
+            if (voiceOverComponent != null)
             {
                 StartCoroutine(PlayVoiceOverWithDelay(nextTask.voiceOver, 2f));
             }
@@ -126,19 +125,19 @@ public class clipboard : MonoBehaviour
 
 
 
-    // Feedback bij voltooien taak
+    // Handles the audiovisual feedback when a task is completed
     private void PlayCompletionFeedback()
     {
-        // Geluid afspelen
+        // Play the completion sound
         if (completionSound != null && audioSource != null)
         {
             audioSource.PlayOneShot(completionSound);
         }
 
-        // Canvas tijdelijk tonen
+        // Briefly show the completion canvas
         if (completionCanvas != null)
         {
-            StopAllCoroutines(); // Zorg dat eerdere coroutines niet interfereren
+            StopAllCoroutines(); // Ensure earlier coroutines do not interfere
             StartCoroutine(ShowCanvasTemporarily());
         }
     }
@@ -158,9 +157,9 @@ public class clipboard : MonoBehaviour
 
         yield return new WaitForSeconds(delay);
 
-        VoiceOver vo = voiceOverManager.GetComponent<VoiceOver>();
-        if (vo != null)
-            vo.PlayVoiceOver(clip);
+        VoiceOver voiceOverComponent = voiceOverManager.GetComponent<VoiceOver>();
+        if (voiceOverComponent != null)
+            voiceOverComponent.PlayVoiceOver(clip);
     }
 
 

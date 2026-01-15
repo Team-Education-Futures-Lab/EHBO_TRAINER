@@ -4,16 +4,21 @@ using TMPro;
 
 public class TimeManager : MonoBehaviour
 {
-    public float TimeInMinutes = 3;
-    public bool WithText = true;
+    [SerializeField]
+    private float TimeInMinutes = 3;
+    [SerializeField]
+    private bool WithText = true;
 
-    public TextMeshProUGUI Timer;
-    public Slider timerSlider;
+    [SerializeField]
+    private TextMeshProUGUI Timer;
+    [SerializeField]
+    private Slider timerSlider;
 
     private float TimeInSeconds;
     private bool stopTimer;
 
-    public AudioSource TickingSound;
+    [SerializeField]
+    private AudioSource TickingSound;
 
     void Update()
     {

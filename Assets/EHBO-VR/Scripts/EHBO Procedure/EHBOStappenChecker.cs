@@ -62,13 +62,13 @@ public class EHBOStappenChecker : MonoBehaviour
     // Display real-time debug information for completed steps
     private void DisplayDebugInfo()
     {
-        string debugText = "Steps Completed:\n";
+        string debugPanelString = "Steps Completed:\n";
         for (int i = 0; i < completedSteps.Count; i++)
         {
-            debugText += $"{i + 1}. {completedSteps[i]}\n";
+            debugPanelString += $"{i + 1}. {completedSteps[i]}\n";
         }
-        debugPanelText.text = debugText;
-        Debug.Log(debugText); // Output to console as well
+        debugPanelText.text = debugPanelString;
+        Debug.Log(debugPanelString); // Output to console as well
     }
 
     // Display the summary panel with final results and comparison if incorrect

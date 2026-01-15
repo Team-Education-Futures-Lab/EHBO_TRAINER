@@ -5,13 +5,13 @@ using UnityEngine;
 public class handzichtbaarheid : MonoBehaviour
 {
     [SerializeField] private GameObject ObjectToMakeVisable;
-    [SerializeField] private float delayTime = 1.0f; // 1 second delay
+    [SerializeField] private float delayTime = 1.0f; // Delay before the object becomes visible
 
-    private Coroutine showCoroutine; // Coroutine reference for control
+    private Coroutine showCoroutine; // Reference to the running coroutine
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))  // Adjust detection as needed
+        if (other.CompareTag("Player"))
         {
             // Start the coroutine to show the object after the delay
             if (showCoroutine == null)
@@ -37,7 +37,7 @@ public class handzichtbaarheid : MonoBehaviour
 
     private IEnumerator ShowObjectWithDelay()
     {
-        // Wait for the specified delay time
+        // Wait for the specified delay before showing the object
         yield return new WaitForSeconds(delayTime);
 
         // After the delay, make the object visible

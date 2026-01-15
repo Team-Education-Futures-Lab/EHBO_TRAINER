@@ -4,7 +4,7 @@ using System.Collections;
 public class VoiceOver : MonoBehaviour
 {
     [SerializeField] private AudioSource voiceOverSource;
-    [SerializeField] private AudioClip IntroTutorialsClip;       // de voice over audio van de intro/menu
+    [SerializeField] private AudioClip IntroTutorialsClip;       // Voice-over audio for the intro/menu
     [SerializeField] private float delayIntroVoiceOver = 2f;
     void Start()
     {

@@ -12,23 +12,23 @@ public class scriptbasisdetectie : MonoBehaviour
     [SerializeField] private List<GameObject> objectsToDeActivateOnEnter;
     [SerializeField] private List<GameObject> objectsToActivateOnExit;
 
-    private float actionTimer = 0.0f;
-    private bool isPerformingAction = false;
-    private BoxCollider boxCollider;
+    private float elapsedActionTime = 0.0f;
+    private bool isCountingActionTime = false;
+    private BoxCollider triggerCollider;
 
     void Start()
     {
-        boxCollider = GetComponent<BoxCollider>();
+        triggerCollider = GetComponent<BoxCollider>();
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            isPerformingAction = true;
+            isCountingActionTime = true;
 
-            if (boxCollider != null)
-                boxCollider.size *= 3f;
+            if (triggerCollider != null)
+                triggerCollider.size *= 3f;
 
             foreach (GameObject obj in objectsToDeActivateOnEnter)
                 obj.SetActive(false);
@@ -39,11 +39,11 @@ public class scriptbasisdetectie : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            isPerformingAction = false;
-            actionTimer = 0.0f;
+            isCountingActionTime = false;
+            elapsedActionTime = 0.0f;
 
-            if (boxCollider != null)
-                boxCollider.size /= 3f;
+            if (triggerCollider != null)
+                triggerCollider.size /= 3f;
 
             foreach (GameObject obj in objectsToActivateOnExit)
                 obj.SetActive(true);
@@ -52,14 +52,14 @@ public class scriptbasisdetectie : MonoBehaviour
 
     void Update()
     {
-        if (isPerformingAction)
+        if (isCountingActionTime)
         {
-            actionTimer += Time.deltaTime;
+            elapsedActionTime += Time.deltaTime;
 
-            if (actionTimer >= requiredDuration)
+            if (elapsedActionTime >= requiredDuration)
             {
                 CompleteTask();
-                isPerformingAction = false;
+                isCountingActionTime = false;
             }
         }
     }

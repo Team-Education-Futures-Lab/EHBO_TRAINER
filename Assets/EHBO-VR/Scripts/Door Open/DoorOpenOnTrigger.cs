@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class DoorOpenOnTrigger : MonoBehaviour
 {
-    public Animator doorAnimator;
-    public AudioSource doorSound; // voeg hier het geluid toe via Inspector
+    [SerializeField]
+    private Animator doorAnimator;
+    [SerializeField]
+    private AudioSource doorSound; // Assign the door audio clip in the Inspector
 
     private void OnTriggerEnter(Collider other)
     {
@@ -12,7 +14,6 @@ public class DoorOpenOnTrigger : MonoBehaviour
             doorAnimator.SetTrigger("OpenDoor");
             Debug.Log("NPCPlayer trigger detected, opening door.");
 
-            // speel het geluid af
             if (doorSound != null)
                 doorSound.Play();
         }

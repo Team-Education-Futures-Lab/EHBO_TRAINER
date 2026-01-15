@@ -6,16 +6,24 @@ using UnityEngine.AI;
 public class IncidentCountdown : MonoBehaviour
 {
     // Variables for countdown and control
-    public bool IsActive = false;
-    public float countdownTime = 5f; // Default countdown time
-    public bool useRandomTime = false; // Toggle for random countdown time
-    public float randomMin = 3f; // Minimum random countdown time
-    public float randomMax = 10f; // Maximum random countdown time
+    [SerializeField]
+    private bool IsActive = false;
+    [SerializeField]
+    private float countdownTime = 5f; // Default countdown time
+    [SerializeField]
+    private bool useRandomTime = false; // Toggle for random countdown time
+    [SerializeField]
+    private float randomMin = 3f; // Minimum random countdown time
+    [SerializeField]
+    private float randomMax = 10f; // Maximum random countdown time
 
-    public Animator[] objectsToAnimate; // Reference to the animators
-    public AudioSource countdownEndSound; // Reference to the AudioSource for the sound effect
+    [SerializeField]
+    private Animator[] objectsToAnimate; // Reference to the animators
+    [SerializeField]
+    private AudioSource countdownEndSound; // Reference to the AudioSource for the sound effect
 
-    public GameObject[] responders; // De 2 NPC's die moeten reageren
+    [SerializeField]
+    private GameObject[] responders; // The responders that need to be activated
 
     private float currentTime;
     private bool countdownFinished = false; // To track if the countdown is already finished

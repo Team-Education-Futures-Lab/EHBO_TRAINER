@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class handgrijpzichtbaarheid : MonoBehaviour
 {
-    [SerializeField] private GameObject ObjectToMakeVisable; // Object to show
-    [SerializeField] private bool isGrabbing = false; // Visibility condition
+    [SerializeField] private GameObject ObjectToMakeVisable; // Object to show when the player is grabbing
+    [SerializeField] private bool isGrabbing = false; // Determines if the object should be visible
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && isGrabbing) // Check if isGrabbing is true
+        if (other.CompareTag("Player") && isGrabbing)
         {
             // Make the object visible immediately
             ObjectToMakeVisable.SetActive(true);
@@ -18,8 +18,7 @@ public class handgrijpzichtbaarheid : MonoBehaviour
     {
         if (other.CompareTag("Player") && !isGrabbing)
         {
-
-
+            // No action needed; the object stays hidden until grabbing is enabled
         }
         if (other.CompareTag("Player") && isGrabbing)
         {

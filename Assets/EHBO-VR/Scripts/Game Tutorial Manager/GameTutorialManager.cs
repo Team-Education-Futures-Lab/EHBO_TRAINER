@@ -6,26 +6,35 @@ using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class GameTutorialManager : MonoBehaviour
 {
-    public TMP_Text[] tutorialTexts;
+    [SerializeField]
+    private TMP_Text[] tutorialTexts;
     private int currentStep = 0;
     private int maxSteps = 4;
 
-    public RectTransform timerCanvas;
+    [SerializeField]
+    private RectTransform timerCanvas;
 
-    public TimeManager timeManager;
+    [SerializeField]
+    private TimeManager timeManager;
 
-    public Achievement achievementManager;
+    [SerializeField]
+    private Achievement achievementManager;
 
     [Header("Video Player objects")]
-    public GameObject videoPlayerHandGestures;
-    public GameObject videoPlayerVRHands;
+    [SerializeField]
+    private GameObject videoPlayerHandGestures;
+    [SerializeField]
+    private GameObject videoPlayerVRHands;
 
     [Header("To the Game Button")]
-    public GameObject toGameButton;
+    [SerializeField]
+    private GameObject toGameButton;
 
     [Header("Cube Grab Display")]
-    public GameObject CubeGrabDisplay;
-    public GameObject Cube;
+    [SerializeField]
+    private GameObject CubeGrabDisplay;
+    [SerializeField]
+    private GameObject Cube;
 
     [Header("Voice-over per step")]
     [SerializeField] private AudioClip[] VoiceOvers; // 0 = stap 0, 1 = stap 1, etc.
