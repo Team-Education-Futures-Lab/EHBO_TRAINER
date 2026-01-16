@@ -6927,7 +6927,7 @@ PrefabInstance:
     - target: {fileID: 2788863131441146928, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: completionCanvas
       value: 
-      objectReference: {fileID: 1763896955}
+      objectReference: {fileID: 0}
     - target: {fileID: 3147811332488443302, guid: 8409f18d7a0be1d4594a575c303fa47e, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -7871,7 +7871,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 531264845835054097, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6465019692711123533, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       insertIndex: -1
@@ -7886,9 +7887,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6465019692711151213, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 862492135}
-    - targetCorrespondingSourceObject: {fileID: 531264845835054097, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1763896952}
     - targetCorrespondingSourceObject: {fileID: 6465019692711151215, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 240146686}
@@ -14265,7 +14263,7 @@ PrefabInstance:
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: completionCanvas
       value: 
-      objectReference: {fileID: 1763896955}
+      objectReference: {fileID: 0}
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: tasks.Array.size
       value: 4
@@ -14274,6 +14272,10 @@ PrefabInstance:
       propertyPath: voiceOverManager
       value: 
       objectReference: {fileID: 95257609}
+    - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+      propertyPath: achievementManager
+      value: 
+      objectReference: {fileID: 1480998113}
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: tasks.Array.data[1].taskName
       value: bell 112
@@ -25594,49 +25596,6 @@ Transform:
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 4168469141097319074, guid: 4bf459842f45eb648a8e314fa01c55b6, type: 3}
   m_PrefabInstance: {fileID: 1355122424}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1763896950 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 531264845835054097, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
-  m_PrefabInstance: {fileID: 554813277}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1763896951 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 478748276222933279, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
-  m_PrefabInstance: {fileID: 554813277}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1763896952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763896950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _enableMipmapping: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 1763896951}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  expensive: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  overlayType: 2
-  _overlayEnabled: 1
---- !u!223 &1763896955 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 3553047369710571998, guid: 3fe6e11db57984b42be853920807ceb1, type: 3}
-  m_PrefabInstance: {fileID: 554813277}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1764017324 stripped
 Transform:

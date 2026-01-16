@@ -23,13 +23,12 @@ public class clipboard : MonoBehaviour
     [SerializeField] private List<Task> tasks = new List<Task>();
     private int currentTaskIndex = 0;
 
-    [Header("Feedback Settings")]
-    [SerializeField] private AudioClip completionSound;       // Sound played when a task is completed
-    [SerializeField] private Canvas completionCanvas;         // Canvas that briefly shows completion feedback
-    [SerializeField] private float canvasDisplayDuration = 2f;// Duration that the completion canvas stays visible
 
     [Header("Voice-over Settings")]
     [SerializeField] private GameObject voiceOverManager;
+
+    [SerializeField]
+    private Achievement achievementManager;
 
 
 
@@ -44,9 +43,7 @@ public class clipboard : MonoBehaviour
         if (audioSource == null)
             audioSource = gameObject.AddComponent<AudioSource>();
 
-        // Disable the completion canvas by default
-        if (completionCanvas != null)
-            completionCanvas.gameObject.SetActive(false);
+
         
     }
 
@@ -95,12 +92,16 @@ public class clipboard : MonoBehaviour
             voiceOverComponent.StopVoiceOver();
         }
 
+        // Show achievement for completing the task
+        if (achievementManager != null)
+        {
+            achievementManager.UnlockAchievement(Achievement.TutorialType.VR, currentTaskIndex + 1);
+        }
+
         // Update the task image to show the completed texture
         if (currentTask.completedTexture != null)
             currentTask.taskImage.texture = currentTask.completedTexture;
 
-        // Provide feedback to the player
-        PlayCompletionFeedback();
 
         // Reveal the next task (if available)
         currentTaskIndex++;
@@ -121,33 +122,6 @@ public class clipboard : MonoBehaviour
         }
     }
 
-
-
-
-
-    // Handles the audiovisual feedback when a task is completed
-    private void PlayCompletionFeedback()
-    {
-        // Play the completion sound
-        if (completionSound != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(completionSound);
-        }
-
-        // Briefly show the completion canvas
-        if (completionCanvas != null)
-        {
-            StopAllCoroutines(); // Ensure earlier coroutines do not interfere
-            StartCoroutine(ShowCanvasTemporarily());
-        }
-    }
-
-    private IEnumerator ShowCanvasTemporarily()
-    {
-        completionCanvas.gameObject.SetActive(true);
-        yield return new WaitForSeconds(canvasDisplayDuration);
-        completionCanvas.gameObject.SetActive(false);
-    }
 
     
     private IEnumerator PlayVoiceOverWithDelay(AudioClip clip, float delay)
