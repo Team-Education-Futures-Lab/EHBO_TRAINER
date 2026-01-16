@@ -96,7 +96,7 @@ public class GameTutorialManager : MonoBehaviour
             Debug.Log("Next Step " + currentStep);
 
 
-            achievementManager.UnlockAchievement(completedStep);
+            achievementManager.UnlockAchievement(Achievement.TutorialType.Game, completedStep);
         }
 
     }
