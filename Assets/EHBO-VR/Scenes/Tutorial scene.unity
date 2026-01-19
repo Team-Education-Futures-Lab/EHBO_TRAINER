@@ -418,17 +418,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4757723854870162, guid: 6d513e3e97508a3429bc5eac2b8b7145, type: 3}
   m_PrefabInstance: {fileID: 24933845}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &26579159 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8050360138369415148, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
-  m_PrefabInstance: {fileID: 1087414847}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &26891288 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4958332315337656, guid: 5a652a60006d6ec46980e623412396f9, type: 3}
@@ -1083,44 +1072,6 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &43240207 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 232253351739101219, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
-  m_PrefabInstance: {fileID: 1242519358}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &43240208 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1113275510229034383, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
-  m_PrefabInstance: {fileID: 1242519358}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &43240209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43240207}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _enableMipmapping: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 43240208}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  expensive: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  overlayType: 2
-  _overlayEnabled: 1
 --- !u!1001 &44464838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4273,17 +4224,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 685803a48200879419cbf0f982932eb1, type: 3}
---- !u!114 &270446135 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1121722730735774505, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
-  m_PrefabInstance: {fileID: 1087414847}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &271697460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14169,7 +14109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: tasks.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: voiceOverManager
@@ -14194,7 +14134,7 @@ PrefabInstance:
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: tasks.Array.data[3].taskText
       value: 
-      objectReference: {fileID: 270446135}
+      objectReference: {fileID: 0}
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: tasks.Array.data[0].voiceOver
       value: 
@@ -14210,7 +14150,7 @@ PrefabInstance:
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: tasks.Array.data[3].taskImage
       value: 
-      objectReference: {fileID: 26579159}
+      objectReference: {fileID: 0}
     - target: {fileID: 8469335781672680761, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
       propertyPath: tasks.Array.data[3].voiceOver
       value: 
@@ -14228,6 +14168,9 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 8940657355304793666, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
     - {fileID: 6048908130824924888, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+    - {fileID: 5088004363891427098, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+    - {fileID: 3249577507444425030, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
+    - {fileID: 1227627564157693414, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1071927283624916332, guid: d305683b8e33c4e41a55322427ef45df, type: 3}
@@ -17105,7 +17048,8 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6314968464436686323, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 232253350404727599, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
@@ -17117,9 +17061,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8749818802765317047, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
       insertIndex: -1
       addedObject: {fileID: 879457254}
-    - targetCorrespondingSourceObject: {fileID: 232253351739101219, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 43240209}
   m_SourcePrefab: {fileID: 100100000, guid: 5239d13158998b148b3e5a0c1de7c054, type: 3}
 --- !u!4 &1249842419 stripped
 Transform:
@@ -27892,7 +27833,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1929541602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28128,7 +28069,7 @@ RectTransform:
   m_Father: {fileID: 332018952}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
