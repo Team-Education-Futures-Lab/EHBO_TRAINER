@@ -2191,11 +2191,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4168140838661730, guid: 62b11dd993aa50e42a0890a734908161, type: 3}
   m_PrefabInstance: {fileID: 1694028118}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &117989319 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2044460589861100289, guid: a8764922f3a9e1740b79346543e14f83, type: 3}
-  m_PrefabInstance: {fileID: 737999719}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &118991988
 GameObject:
   m_ObjectHideFlags: 0
@@ -7472,8 +7467,8 @@ MonoBehaviour:
   videoPlayerHandGestures: {fileID: 2117210582}
   videoPlayerVRHands: {fileID: 1349718817}
   toGameButton: {fileID: 1181266484}
-  CubeGrabDisplay: {fileID: 117989319}
-  Cube: {fileID: 2137806392}
+  CubeGrabDisplay: {fileID: 0}
+  Cube: {fileID: 0}
   VoiceOvers: []
   voiceOverManager: {fileID: 95257611}
   voiceOverDelay: 2
@@ -31522,7 +31517,7 @@ GameObject:
   - component: {fileID: 2137806394}
   - component: {fileID: 2137806399}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Kubus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

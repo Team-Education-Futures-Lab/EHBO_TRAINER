@@ -89,17 +89,20 @@ public class GameTutorialManager : MonoBehaviour
     {
         if (currentStep < maxSteps)
         {
-            int completedStep = currentStep; // stap die je NET hebt geleerd
+            currentStep++;       // eerst de stap omhoog
+            UpdateTexts();       // update teksten
 
-            currentStep++;
-            UpdateTexts();
+            // Geef alleen achievements door vanaf stap 2
+            if (currentStep > 1) // stap 0 en 1 geen achievement
+            {
+                achievementManager.UnlockAchievement(Achievement.TutorialType.Game, currentStep - 1);
+                // currentStep - 1 = stap die je net hebt voltooid
+            }
+
             Debug.Log("Next Step " + currentStep);
-
-
-            achievementManager.UnlockAchievement(Achievement.TutorialType.Game, completedStep);
         }
-
     }
+
 
     public void PreviousStep()
     {
