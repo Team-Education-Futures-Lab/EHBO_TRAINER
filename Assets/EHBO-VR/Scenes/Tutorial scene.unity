@@ -7474,7 +7474,12 @@ MonoBehaviour:
   toGameButton: {fileID: 1181266484}
   CubeGrabDisplay: {fileID: 117989319}
   Cube: {fileID: 2137806392}
-  VoiceOvers: []
+  VoiceOvers:
+  - {fileID: 8300000, guid: 75711d2258ff91b47ada06514eb01139, type: 3}
+  - {fileID: 8300000, guid: 1ac1007740e591e44ad0afc97dd3af5d, type: 3}
+  - {fileID: 8300000, guid: 34936e9789a482d4dac8578812a45b4e, type: 3}
+  - {fileID: 8300000, guid: 6d3424546a06eeb46934295e3a71b2d6, type: 3}
+  - {fileID: 8300000, guid: 0799fe35fa816e94ba36858402a7ba2f, type: 3}
   voiceOverManager: {fileID: 95257611}
   voiceOverDelay: 2
 --- !u!4 &541885670

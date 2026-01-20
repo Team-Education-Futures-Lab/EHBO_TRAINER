@@ -89,14 +89,13 @@ public class GameTutorialManager : MonoBehaviour
     {
         if (currentStep < maxSteps)
         {
-            currentStep++;       // eerst de stap omhoog
-            UpdateTexts();       // update teksten
+            currentStep++;     
+            UpdateTexts();      
 
-            // Geef alleen achievements door vanaf stap 2
-            if (currentStep > 1) // stap 0 en 1 geen achievement
+            if (currentStep > 1) 
             {
                 achievementManager.UnlockAchievement(Achievement.TutorialType.Game, currentStep - 1);
-                // currentStep - 1 = stap die je net hebt voltooid
+               
             }
 
             Debug.Log("Next Step " + currentStep);
